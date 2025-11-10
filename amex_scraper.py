@@ -61,7 +61,7 @@ def scrape_amex():
     
         apr = "19.74% to 28.74%"
     
-        cc = CreditCard(name, annual_fee, welcome_amount, apr, benefits)
+        cc = CreditCard("amex", ame, annual_fee, welcome_amount, apr, benefits)
     
         results.append(cc)
         

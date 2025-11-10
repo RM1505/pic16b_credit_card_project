@@ -21,7 +21,7 @@ def scrape_capital_one():
         rewards = re.sub("Rewards", "", card.select("div.feature.ng-star-inserted")[0].text)
         annual_fee = re.sub("Annual Fee", "", card.select("div.feature.ng-star-inserted")[1].text)
         apr = re.sub("Purchase Rate", "", card.select("div.feature.ng-star-inserted")[2].text)
-        card_obj = CreditCard(name, annual_fee, welcome_amount, apr, rewards)
+        card_obj = CreditCard("capital_one", name, annual_fee, welcome_amount, apr, rewards)
         cards.append(card_obj)
 
     return cards

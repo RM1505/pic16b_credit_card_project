@@ -46,7 +46,7 @@ def scrape_chase():
         for reward in rewards:
             text_rewards.append(reward.text.strip())
             
-        credit_card = CreditCard(name, annual_fee, welcome_offer, apr, text_rewards)
+        credit_card = CreditCard("chase", name, annual_fee, welcome_offer, apr, text_rewards)
         
         cards.append(credit_card)
 
