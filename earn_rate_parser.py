@@ -4,10 +4,9 @@ import re
 from typing import Dict
 from filter import RewardFocus
 
-def split_sentences(text: str):
+def split_sentences(text: str) -> list[str]:
     """
-    Roughly split rewards text into sentence-like chunks using punctuation
-    and newlines.
+    Roughly split rewards text into sentence-like chunks.
     """
     if isinstance(text, list):
         text = " ".join(str(t) for t in text)
@@ -21,15 +20,15 @@ def split_sentences(text: str):
     return [t for t in text2 if t]
 
 
-def extract_multipliers(sentence: str):
+def extract_multipliers(sentence: str) -> list[float]:
     """
     Extract numeric earn multipliers or percent-back values from a sentence.
 
     Examples this should catch:
-      - '3x points'
-      - '5X miles'
-      - '5% cash back'
-      - '1 % back on all other purchases'
+      - "3x points"
+      - "5X miles"
+      - "5% cash back"
+      - "1 % back on all other purchases"
     Returns a list of floats (e.g. [3.0, 5.0]).
     """
     s = sentence.lower()
@@ -38,14 +37,14 @@ def extract_multipliers(sentence: str):
 
     # Pattern 1: '3x', '4 x', '5×'
     for match in re.finditer(r"(\d+(\.\d+)?)\s*[x×]", s):
-        val = float(match.group(1))
-        multipliers.append(val)
+        value = float(match.group(1))
+        multipliers.append(value)
 
     # Pattern 2: '5% cash back', '2 % back', etc.
     # Here we interpret '5% back' as equivalent to 5x for points-like logic FOR NOW
     for match in re.finditer(r"(\d+(\.\d+)?)\s*%", s):
-        val = float(match.group(1))
-        multipliers.append(val)
+        value = float(match.group(1))
+        multipliers.append(value)
 
     return multipliers
 
@@ -81,7 +80,7 @@ def parse_earn_rates(rewards_text: str, default_other: float = 1.0) -> Dict[str,
             # If no explicit multiplier found, assume base 1x for those categories
             rate = default_other
 
-        #Assign this rate to all categories mentioned in this sentence
+        #Assign this rate to all categories mentioned in the sentence
         for c in categories:
             # Keep the maximum rate if category appears multiple times
             if c not in earn_rates or rate > earn_rates[c]:
