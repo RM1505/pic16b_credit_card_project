@@ -1,0 +1,23 @@
+from nerdwallet_scraper import scrape_cards
+from parsing_class import Parse
+
+def test_integration():
+    print("Testing scraper + parser integration...")
+    
+    # Run their scraper
+    cards = scrape_cards()
+    print(f"Scraped {len(cards)} cards")
+    
+    # Test with your parser
+    parser = Parse(cards)
+    df = parser.MakeDataFrame()
+    
+    print("Integration successful!")
+    print(f"DataFrame shape: {df.shape}")
+    print("\nSample of parsed data:")
+    print(df.head())
+    
+    return df
+
+if __name__ == "__main__":
+    df = test_integration()
