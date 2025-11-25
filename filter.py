@@ -15,6 +15,7 @@ class Parse:
         #this is the new list after they're parsed
         self.parsed_rewards = []
         self.parsed_annual_fee = []
+        self.parsed_welcome_amount = []
 
     def ParseThrough(self):
         """
@@ -24,15 +25,23 @@ class Parse:
         for text_str in self.rewards:
             self.parsed_rewards.append(self.RewardParsing(text_str))
 
-        #parse through the annual fee and built a new list
+        #parse through the annual fee and build a new list
         for text_str in self.annual_fee:
             self.parsed_annual_fee.append(self.CleanAnnual(text_str))
+
+        #parse through welcome amount and build a new list
+        for text_str in self.welcome_amount:
+            self.parsed_welcome_amount.append(self.CleanWelcome(text_str))
          
     def RewardParsing(self, text_str):
         """
         This function takes the card.rewards, and parses through them for key information
         It returns a dictionary with the reward focus, type, and the rate with the unit
         """
+        # Handle case where rewards might be a list instead of a string
+        if isinstance(text_str, list):
+            text_str = " ".join(text_str)
+        
         # keywords to find in data to split into categories
         reward_focus_dict = {
         "travel" : ["travel", "hotel", "vacation", "flight", "airline", "miles", "rental", "TSA"],
@@ -41,13 +50,14 @@ class Parse:
         "groceries" : ["groceries", "supermarket"],
         "other stores" : ["drugstore"],
         "transit" : ["gas", "transit"],
-        "other" : ["other"]}
+        "other" : ["other"],
+        "every" : ["every", "everything", "all"]}
 
         # keywords for the reward types you can get
         reward_type_list = ["miles", "cash back", "points", "credit"]
 
         #list of numbers for the reward rates
-        number_chars = "0123456789,."
+        number_chars = "0123456789,.$"
 
         #set to store the reward focus
         categories_set = set()
@@ -91,9 +101,9 @@ class Parse:
                 #if a current number exists and the next number isn't part of the number_cars append it to found_numbers and reset current_number
                 if current_number:
                 
-                    #clean the number string by deleting,
-                    cleaned_number = current_number.replace(',', '').strip()
-
+                    #clean the number string by deleting , and $
+                    cleaned_number = current_number.replace(',', '').replace('$', '').strip()
+                    
                     #add the number and unit to string
                     if cleaned_number and cleaned_number != '.':
                         #store dict in the list
@@ -104,8 +114,8 @@ class Parse:
                 
         #if the sentence ends with a number...
         if current_number:
-            # clean the number string by deleting,
-            cleaned_number = current_number.replace(',', '').strip()
+            # clean the number string by deleting , and $
+             cleaned_number = current_number.replace(',', '').replace('$', '').strip()
 
             # add the number and unit to string
             if cleaned_number and cleaned_number != '.':
@@ -119,6 +129,69 @@ class Parse:
         "rate with unit": found_numbers
     }
 
+    def CleanWelcome(self, text_str):
+        """
+        This function cleans the welcome bonus amount and extracts the numerical value
+        Returns the highest numerical value found as float
+        """
+
+        #if the card doesn't have a welcome amount return 0
+        if text_str == None or text_str == "None" or text_str == "none" or text_str == "N/A":
+            return [0]
+
+        #list to store numbers found in total
+        found_numbers = []
+
+        #list of numbers for the welcome rates
+        number_chars = "0123456789,.$"
+
+        #string to store the number you're on and the unit you're on
+        current_number = ""
+        current_unit = "points"
+
+        #clean the text by lowering all capitals
+        cleaned_text = text_str.lower()
+
+        #find the corresponding number in the sentence
+        for char in text_str:
+            #if a number exists, add it to the string
+            if char in number_chars:
+                current_number += char
+            elif char == '$' and current_number:
+                current_unit = '$'
+            elif char == '%' and current_number:
+                current_unit = '%'
+            elif char == 'x' and current_number:
+                current_unit = 'x'
+            else:
+                #if a current number exists and the next number isn't part of the number_cars append it to found_numbers and reset current_number
+                if current_number:
+                
+                    #clean the number string by deleting , and $
+                    cleaned_number = current_number.replace(',', '').replace('$', '').strip()
+
+                    #add the number and unit to string
+                    if cleaned_number and cleaned_number != '.':
+                        #store dict in the list
+                        found_numbers.append({'rate': cleaned_number, 'unit': current_unit})
+
+                    current_number = ""
+                    current_unit = "points"
+                
+        #if the sentence ends with a number...
+        if current_number:
+            # clean the number string by deleting , and $
+            cleaned_number = current_number.replace(',', '').replace('$', '').strip()
+
+            # add the number and unit to string
+            if cleaned_number and cleaned_number != '.':
+                # store dict in the list
+                found_numbers.append({'rate': cleaned_number, 'unit': current_unit}) 
+
+        #Returns a dict of all of the numbers and their units
+        return found_numbers
+
+    
     def CleanAnnual(self, text_str):
         """
         This function takes the annual rate and outputs the most relevant number for the annual rate as an int
@@ -139,11 +212,8 @@ class Parse:
         #if the cleaned_text only has one word...
         if len(cleaned_text) == 1:
             fee_str = cleaned_text[0]
-        
-            #clean the fee string
-            fee_str = fee_str.replace('$', '').replace(',', '').strip()
 
-            if fee_str == 0 or fee_str == 0.0:
+            if fee_str == '0' or fee_str == '0.0':
                 return 0.0
 
             #for each character, add it to the annual rate
@@ -158,10 +228,17 @@ class Parse:
                 else: 
                     if annual_rate:
                         annual_list.append(annual_rate)
-            annual_rate = annual_list[1] 
+            annual_rate = annual_list[-1] 
 
-        #returns the annual_rate as a singular int
-        return int(annual_rate)
+        #if it cant find any numbers...
+        if not annual_rate:
+            return 0
+
+        #clean the text...
+        annual_rate = annual_rate.replace('$', '').replace(',', '').strip()
+
+        #returns the annual_rate as a singular float
+        return float(annual_rate)
 
     def MakeDataFrame(self):
         """
@@ -175,7 +252,7 @@ class Parse:
         data = {
             'card_name': self.card_name,
             'annual_fee': self.parsed_annual_fee,
-            'welcome_amount': self.welcome_amount,
+            'welcome_amount': self.parsed_welcome_amount,
             'apr': self.apr,
             'rewards': self.parsed_rewards
             
