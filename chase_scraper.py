@@ -3,7 +3,8 @@ import requests
 from urllib.parse import urljoin
 import re
 from tqdm import tqdm
-from scraper_core import link2soup, CreditCard
+from scraper_core import link2soup
+import pandas as pd
 
 def scrape_chase():
     BASE = "https://creditcards.chase.com"
@@ -13,41 +14,48 @@ def scrape_chase():
     
     card_containers = soup.select("div.cmp-cardsummary__inner-container")
     
-    cards = []
+    cards = {
+        "name" : [],
+        "issuer" : [],
+        "annual_fee" : [],
+        "rewards" : []
+    }
+
     
     for card in tqdm(card_containers):
         title_container = card.select("div.cmp-cardsummary__inner-container__title h2 a")[0]
-        name = re.sub(r"\bLinks to product page\b", "", title_container.get_text(), flags=re.I).strip()
+        name = re.sub(r"(®|Links to product page)", "", title_container.get_text(), flags=re.I).strip()
+        cards["name"].append(name)
+        
         url = urljoin(BASE, title_container.get("href"))
     
         summary_container = card.select("div.cmp-cardsummary__inner-container--summary")[0]
         
-        offer_block = summary_container.select_one("div.cmp-cardsummary__inner-container--card-member-offer p")
-        for el in offer_block.select("s, strike, .strikeThrough, [style*='line-through']"):
-            el.decompose()
-        welcome_offer = offer_block.get_text(" ", strip=True)
-        apr = summary_container.select("div.cmp-cardsummary__inner-container--purchase-apr p")[0].get_text()
         annual_fee = summary_container.select("div.cmp-cardsummary__inner-container--annual-fee p")[0].get_text()
+        annual_fee = re.sub(r"†|Opens pricing and terms in new window", "", annual_fee)
+        annual_fee = re.split(r"[.;]", annual_fee)[0]
+        cards["annual_fee"].append(annual_fee)
         
         card_soup = link2soup(url)
-        reward_container_options = [
-            "div.cmp-rewardsbenefits__item p",
-            "div#container-43fa1cda69 h3, div#container-43fa1cda69 div.cmp-reward__element",
-            "div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 h3:not([class]), div.aem-Grid.aem-Grid--12.aem-Grid--default--12 div.cmp-reward__element"
-        ]
-        rewards = []
-        for div in reward_container_options:
-            if rewards == []:
-                rewards = card_soup.select(div)
-        if rewards == []:
-            print(f"FML:{name}")
-    
-        text_rewards = []
-        for reward in rewards:
-            text_rewards.append(reward.text.strip())
-            
-        credit_card = CreditCard("chase", name, annual_fee, welcome_offer, apr, text_rewards)
-        
-        cards.append(credit_card)
+        rewards = [re.sub(r"\n\n|\*", " ", r.text).strip()
+                   for r in card_soup.select("div.cmp-rewardsbenefits__item p, \
+                   div#container-43fa1cda69 h3, \
+                   div#container-43fa1cda69 div.cmp-reward__element, \
+                   div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 div#container-43fa1cda69 h3:not([class]), \
+                   div.aem-Grid.aem-Grid--12.aem-Grid--default--12 div.cmp-reward__element, \
+                   div.rewards-and-benifits--business div.cmp-rewardsbenefits__content div")]
+        rewards = [re.sub(r"®|\xa0|†|opens.*","",r, flags = re.I) for r in rewards if r]
+        rewards = [re.sub(r"Min\. of \(.*?\) and \d+(\.\d+)?", "", r) for r in rewards]
 
-    return cards
+        prefixes_to_remove = ("after", "NEW", "This product", "The new cardmember", "LIMITED", "This credit card", "This card product")
+        filtered = [s for s in rewards if not s.startswith(prefixes_to_remove)]
+
+        #words_to_remove = ("APR")
+        #filtered_again = [s for s in filtered if not any(sub in s for sub in words_to_remove)]
+        
+        cards["rewards"].append(filtered)
+
+        cards["issuer"].append("Chase")
+
+    df = pd.DataFrame(cards)
+    return df
