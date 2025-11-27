@@ -6,7 +6,12 @@ from tqdm import tqdm
 from scraper_core import link2soup
 import pandas as pd
 
-def scrape_capital_one():
+score_conversion = {
+    "Good-Excellent": "Very Good",
+    "Rebuilding": "Poor"
+}
+
+def scrape_capital_one(score = False):
     soup = link2soup("https://www.capitalone.com/credit-cards/compare/")
     card_container = soup.select("card-product-all-cards-list-item")
     card_container = card_container[0:-1] #have some weird formatting with an extra block
@@ -17,6 +22,8 @@ def scrape_capital_one():
         "annual_fee" : [],
         "rewards" : []
     }
+    if score:
+        cards["score"] = []
 
     for card in tqdm(card_container):
         name = re.sub(r'[^ -~]', '', card.select("a.product-name.ng-star-inserted")[0].text) #clear out weird characters
@@ -26,6 +33,16 @@ def scrape_capital_one():
         
         annual_fee = re.sub("Annual Fee", "", card.select("div.feature.ng-star-inserted")[1].text)
         cards["annual_fee"].append(annual_fee)
+
+        if score:
+            credit_score = card.select("button.credit-level-button")[0].text
+            credit_score = re.sub(" Credit", "", credit_score)
+
+            for k in score_conversion.keys():
+                if credit_score == k:
+                    credit_score = score_conversion[k]
+            #credit_score = credit_score.split("-")[0]
+            cards["score"].append(credit_score)
         
         cards["issuer"].append("Capital One")
 

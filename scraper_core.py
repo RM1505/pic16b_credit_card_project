@@ -6,13 +6,11 @@ def link2soup(url):
     return BeautifulSoup(response.text, 'html.parser')
 
 class CreditCard:
-    def __init__(self, name, annual_fee, welcome_amount, apr, rewards, issuer = None):
+    def __init__(self, name, annual_fee, rewards, issuer = None):
         self.issuer = issuer
         self.name = name
         self.annual_fee = annual_fee
-        self.welcome_amount = welcome_amount
-        self.apr = apr
         self.rewards = rewards
         
     def __repr__(self):
-        return f"CreditCard(issuer = {self.issuer} \n, name = {self.name},\n annual_fee = {self.annual_fee},\n welcome_amount = {self.welcome_amount},\n apr = {self.apr},\n rewards = {self.rewards})"
+        return f"CreditCard(issuer = {self.issuer} \n, name = {self.name},\n annual_fee = {self.annual_fee}, \n rewards = {self.rewards})"
