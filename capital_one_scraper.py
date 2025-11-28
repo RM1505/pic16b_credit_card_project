@@ -29,7 +29,7 @@ def scrape_capital_one(score = False, clean = False):
     for card in tqdm(card_container):
         name = re.sub(r'[^ -~]', '', card.select("a.product-name.ng-star-inserted")[0].text) #clear out weird characters
         cards["name"].append(name)
-        rewards = [r for r in re.sub("Rewards", "", card.select("div.feature.ng-star-inserted")[0].text).strip().split(".") if r]
+        rewards = [r for r in re.sub("Rewards", "", card.select("div.feature.ng-star-inserted")[0].text).strip().split(". ") if r]
         cards["rewards"].append(rewards)
         
         annual_fee = re.sub("Annual Fee", "", card.select("div.feature.ng-star-inserted")[1].text)

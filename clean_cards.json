@@ -4,7 +4,7 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Get the credit you need with no annual fee"
+            "Get the credit you need with no annual fee."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -46,7 +46,7 @@
         "annual_fee":"$95",
         "rewards":[
             "Earn unlimited 2 miles per dollar on every purchase",
-            " Earn unlimited 5 miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel"
+            "Earn unlimited 5 miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel"
         ],
         "clean_annual_fee":95,
         "clean_rewards":[
@@ -69,14 +69,13 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 1",
-            "25 miles per dollar on every purchase",
-            " Earn unlimited 5 miles per dollar on hotels, vacation rentals and rental cars booked through Capital One Travel"
+            "Earn unlimited 1.25 miles per dollar on every purchase",
+            "Earn unlimited 5 miles per dollar on hotels, vacation rentals and rental cars booked through Capital One Travel"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                25.0,
+                1.25,
                 "Per Unit",
                 "miles",
                 "All Purchases"
@@ -94,13 +93,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 1",
-            "25 miles per dollar on every purchase, every day"
+            "Earn unlimited 1.25 miles per dollar on every purchase, every day"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                25.0,
+                1.25,
                 "Per Unit",
                 "miles",
                 "All Purchases"
@@ -112,13 +110,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 1",
-            "5% cash back on every purchase, every day"
+            "Earn unlimited 1.5% cash back on every purchase, every day"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -130,13 +127,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 1",
-            "5% cash back on every purchase, every day"
+            "Earn unlimited 1.5% cash back on every purchase, every day"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -149,7 +145,7 @@
         "annual_fee":"$0",
         "rewards":[
             "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
-            " \n4"
+            "\n4"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -172,8 +168,7 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
-            "\u00a0\n4"
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases.\u00a0\n4"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -196,8 +191,7 @@
         "issuer":"Capital One",
         "annual_fee":"$39",
         "rewards":[
-            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
-            "\n4"
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases.\n4"
         ],
         "clean_annual_fee":39,
         "clean_rewards":[
@@ -220,13 +214,12 @@
         "issuer":"Capital One",
         "annual_fee":"$39",
         "rewards":[
-            "Earn unlimited 1",
-            "5% cash back on every purchase, every day"
+            "Earn unlimited 1.5% cash back on every purchase, every day"
         ],
         "clean_annual_fee":39,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -238,8 +231,7 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
-            "\n4"
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases.\n4"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -262,13 +254,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn unlimited 1",
-            "5% cash back on every purchase, every day"
+            "Earn unlimited 1.5% cash back on every purchase, every day."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -280,13 +271,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 1",
-            "5% cash back on every purchase with a refundable $200 minimum deposit"
+            "Earn 1.5% cash back on every purchase with a refundable $200 minimum deposit."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -304,8 +294,7 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Refundable deposit of $49, $99 or $200 gets you at least a $200 initial credit line",
-            "\n\nWith responsible use, you can earn your deposit back and upgrade your card"
+            "Refundable deposit of $49, $99 or $200 gets you at least a $200 initial credit line.\n\nWith responsible use, you can earn your deposit back and upgrade your card."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -317,8 +306,7 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 2% in rewards on every purchase and 5% in rewards on any phone, device or accessory at T-Mobile to be redeemed towards a new phone, device or your T-Mobile bill",
-            "\n8"
+            "Earn 2% in rewards on every purchase and 5% in rewards on any phone, device or accessory at T-Mobile to be redeemed towards a new phone, device or your T-Mobile bill.\n8"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -341,7 +329,7 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn Kohl\u00e2\u0080\u0099s  everywhere Visa is accepted and enjoy exclusive cardholder discounts and a special anniversary offer every year"
+            "Earn Kohl\u00e2\u0080\u0099s  everywhere Visa is accepted and enjoy exclusive cardholder discounts and a special anniversary offer every year."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -353,10 +341,8 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 5% back in rewards on REI purchases, plus 1",
-            "5% back on all other purchases",
-            " Redeem rewards on purchases at REI retail stores and REI",
-            "com"
+            "Earn 5% back in rewards on REI purchases, plus 1.5% back on all other purchases",
+            "Redeem rewards on purchases at REI retail stores and REI.com."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -367,7 +353,7 @@
                 "Retail & Entertainment"
             ],
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -379,10 +365,9 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
-            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
-            " Earn 4% back on grocery stores, dining & food delivery",
-            " Earn 1% back in rewards on everything else"
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            "Earn 4% back on grocery stores, dining & food delivery",
+            "Earn 1% back in rewards on everything else."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -411,10 +396,9 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
-            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
-            " Earn 4% back on grocery stores, dining & food delivery",
-            " Earn 1% back in rewards on everything else"
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            "Earn 4% back on grocery stores, dining & food delivery",
+            "Earn 1% back in rewards on everything else."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -443,10 +427,9 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
-            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
-            " Earn 4% back on grocery stores, dining & food delivery",
-            " Earn 1% back in rewards on everything else"
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            "Earn 4% back on grocery stores, dining & food delivery",
+            "Earn 1% back in rewards on everything else."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -475,10 +458,9 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
-            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
-            " Earn 4% back on grocery stores, dining & food delivery",
-            " Earn 1% back in rewards on everything else"
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            "Earn 4% back on grocery stores, dining & food delivery",
+            "Earn 1% back in rewards on everything else."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -541,13 +523,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Unlimited 1",
-            "5% cash back on every purchase, every day"
+            "Unlimited 1.5% cash back on every purchase, every day"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "cash back",
                 "All Purchases"
@@ -610,13 +591,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Unlimited 1",
-            "5X miles per dollar on every purchase, every day"
+            "Unlimited 1.5X miles per dollar on every purchase, every day"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Multiplier",
                 "miles",
                 "All Purchases"
@@ -662,13 +642,12 @@
         "issuer":"Capital One",
         "annual_fee":"$0",
         "rewards":[
-            "Get 1",
-            "5% back in CLUB Points on purchases, anywhere Mastercard is accepted"
+            "Get 1.5% back in CLUB Points on purchases, anywhere Mastercard is accepted"
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "points",
                 "All Purchases"
@@ -681,12 +660,10 @@
         "annual_fee":"$0",
         "rewards":[
             "Earn 3% back in rewards on most purchases at BJ\u00e2\u0080\u0099s",
-            " 1",
-            "5% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
-            " 10\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
-            " Your rewards never expire",
-            " Redeem your rewards in-club, on BJs",
-            "com or in the BJ\u00e2\u0080\u0099s app"
+            "1.5% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
+            "10\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
+            "Your rewards never expire",
+            "Redeem your rewards in-club, on BJs.com or in the BJ\u00e2\u0080\u0099s app."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
@@ -697,7 +674,7 @@
                 "Other"
             ],
             [
-                5.0,
+                1.5,
                 "Percentage",
                 "rewards",
                 "All Purchases"
@@ -710,11 +687,10 @@
         "annual_fee":"$0",
         "rewards":[
             "Earn 5% back in rewards on most purchases at BJ\u00e2\u0080\u0099s",
-            " 2% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
-            " 15\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
-            " Your rewards never expire",
-            " Redeem your rewards in-club, on BJs",
-            "com or in the BJ\u00e2\u0080\u0099s app"
+            "2% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
+            "15\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
+            "Your rewards never expire",
+            "Redeem your rewards in-club, on BJs.com or in the BJ\u00e2\u0080\u0099s app."
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
