@@ -1,0 +1,735 @@
+[
+    {
+        "name":"Platinum Mastercard",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Get the credit you need with no annual fee"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+
+        ]
+    },
+    {
+        "name":"Venture X Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$395",
+        "rewards":[
+            "Earn unlimited 10X miles on hotels and rental cars booked through Capital One Travel and 5X miles on flights and vacation rentals booked through Capital One Travel, plus unlimited 2X miles on all other purchases"
+        ],
+        "clean_annual_fee":395,
+        "clean_rewards":[
+            [
+                10.0,
+                "Multiplier",
+                "miles",
+                "Travel"
+            ],
+            [
+                5.0,
+                "Multiplier",
+                "miles",
+                "Travel"
+            ],
+            [
+                2.0,
+                "Multiplier",
+                "miles",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Venture Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$95",
+        "rewards":[
+            "Earn unlimited 2 miles per dollar on every purchase",
+            " Earn unlimited 5 miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel"
+        ],
+        "clean_annual_fee":95,
+        "clean_rewards":[
+            [
+                2.0,
+                "Per Unit",
+                "miles",
+                "All Purchases"
+            ],
+            [
+                5.0,
+                "Per Unit",
+                "miles",
+                "Travel"
+            ]
+        ]
+    },
+    {
+        "name":"VentureOne Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 1",
+            "25 miles per dollar on every purchase",
+            " Earn unlimited 5 miles per dollar on hotels, vacation rentals and rental cars booked through Capital One Travel"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                25.0,
+                "Per Unit",
+                "miles",
+                "All Purchases"
+            ],
+            [
+                5.0,
+                "Per Unit",
+                "miles",
+                "Travel"
+            ]
+        ]
+    },
+    {
+        "name":"VentureOne Rewards for Good Credit",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 1",
+            "25 miles per dollar on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                25.0,
+                "Per Unit",
+                "miles",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Quicksilver Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 1",
+            "5% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Quicksilver Rewards for Good Credit",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 1",
+            "5% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Savor Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
+            " \n4"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                3.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Savor Rewards for Good Credit",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
+            "\u00a0\n4"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                3.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"SavorOne Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$39",
+        "rewards":[
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
+            "\n4"
+        ],
+        "clean_annual_fee":39,
+        "clean_rewards":[
+            [
+                3.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"QuicksilverOne Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$39",
+        "rewards":[
+            "Earn unlimited 1",
+            "5% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":39,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Savor Rewards for Students",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
+            "\n4"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                3.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Quicksilver Rewards for Students",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn unlimited 1",
+            "5% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Quicksilver Secured Rewards",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 1",
+            "5% cash back on every purchase with a refundable $200 minimum deposit"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ],
+            [
+                200.0,
+                "Flat Amount",
+                "minimum deposit",
+                "Other"
+            ]
+        ]
+    },
+    {
+        "name":"Platinum Secured",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Refundable deposit of $49, $99 or $200 gets you at least a $200 initial credit line",
+            "\n\nWith responsible use, you can earn your deposit back and upgrade your card"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+
+        ]
+    },
+    {
+        "name":"T-Mobile Visa",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 2% in rewards on every purchase and 5% in rewards on any phone, device or accessory at T-Mobile to be redeemed towards a new phone, device or your T-Mobile bill",
+            "\n8"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                2.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ],
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Retail & Entertainment"
+            ]
+        ]
+    },
+    {
+        "name":"Kohl's Rewards Visa",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn Kohl\u00e2\u0080\u0099s  everywhere Visa is accepted and enjoy exclusive cardholder discounts and a special anniversary offer every year"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+
+        ]
+    },
+    {
+        "name":"REI Co-op Mastercard",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 5% back in rewards on REI purchases, plus 1",
+            "5% back on all other purchases",
+            " Redeem rewards on purchases at REI retail stores and REI",
+            "com"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Retail & Entertainment"
+            ],
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Pottery Barn Key Rewards Visa",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
+            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            " Earn 4% back on grocery stores, dining & food delivery",
+            " Earn 1% back in rewards on everything else"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Retail & Entertainment"
+            ],
+            [
+                4.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Williams Sonoma Key Rewards Visa",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
+            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            " Earn 4% back on grocery stores, dining & food delivery",
+            " Earn 1% back in rewards on everything else"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Retail & Entertainment"
+            ],
+            [
+                4.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"West Elm Key Rewards Visa",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
+            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            " Earn 4% back on grocery stores, dining & food delivery",
+            " Earn 1% back in rewards on everything else"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Retail & Entertainment"
+            ],
+            [
+                4.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"The Key Rewards Visa",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 5% back in rewards across eight of Williams-Sonoma, Inc",
+            "\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+            " Earn 4% back on grocery stores, dining & food delivery",
+            " Earn 1% back in rewards on everything else"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Retail & Entertainment"
+            ],
+            [
+                4.0,
+                "Percentage",
+                "cash back",
+                "Groceries & Dining"
+            ],
+            [
+                1.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Spark 2% Cash Plus",
+        "issuer":"Capital One",
+        "annual_fee":"$150",
+        "rewards":[
+            "Unlimited 2% cash back with spend capacity that adapts to your business"
+        ],
+        "clean_annual_fee":150,
+        "clean_rewards":[
+            [
+                2.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Spark 2% Cash",
+        "issuer":"Capital One",
+        "annual_fee":"$0 intro for the first year, $95 after that",
+        "rewards":[
+            "Unlimited 2% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":95,
+        "clean_rewards":[
+            [
+                2.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Spark 1.5% Cash Select",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Unlimited 1",
+            "5% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Spark 1% Classic",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Get the credit you want for your business, and unlimited 1% cash back on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                1.0,
+                "Percentage",
+                "cash back",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Venture X Business",
+        "issuer":"Capital One",
+        "annual_fee":"$395",
+        "rewards":[
+            "Unlimited\u00a02X miles with spend capacity that adapts to your business"
+        ],
+        "clean_annual_fee":395,
+        "clean_rewards":[
+            [
+                2.0,
+                "Multiplier",
+                "miles",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Spark 2X Miles",
+        "issuer":"Capital One",
+        "annual_fee":"$0 intro for the first year, $95 after that",
+        "rewards":[
+            "Unlimited 2X miles per dollar on every purchase, every day"
+        ],
+        "clean_annual_fee":95,
+        "clean_rewards":[
+            [
+                2.0,
+                "Multiplier",
+                "miles",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Spark 1.5X Miles Select",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Unlimited 1",
+            "5X miles per dollar on every purchase, every day"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Multiplier",
+                "miles",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Cabelas CLUB Card",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Get 1% back in CLUB Points on other purchases, anywhere Mastercard is accepted"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                1.0,
+                "Percentage",
+                "points",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"Bass Pro Shops  CLUB Card",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Get 2% back in CLUB Points on all Bass Pro Shops and Cabela\u00e2\u0080\u0099s purchases"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                2.0,
+                "Percentage",
+                "points",
+                "Retail & Entertainment"
+            ]
+        ]
+    },
+    {
+        "name":"Bass Pro Shops and Cabela's CLUB Business card",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Get 1",
+            "5% back in CLUB Points on purchases, anywhere Mastercard is accepted"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "points",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"BJs One Mastercard",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 3% back in rewards on most purchases at BJ\u00e2\u0080\u0099s",
+            " 1",
+            "5% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
+            " 10\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
+            " Your rewards never expire",
+            " Redeem your rewards in-club, on BJs",
+            "com or in the BJ\u00e2\u0080\u0099s app"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                3.0,
+                "Percentage",
+                "rewards",
+                "Other"
+            ],
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ]
+        ]
+    },
+    {
+        "name":"BJs One+ Mastercard",
+        "issuer":"Capital One",
+        "annual_fee":"$0",
+        "rewards":[
+            "Earn 5% back in rewards on most purchases at BJ\u00e2\u0080\u0099s",
+            " 2% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
+            " 15\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
+            " Your rewards never expire",
+            " Redeem your rewards in-club, on BJs",
+            "com or in the BJ\u00e2\u0080\u0099s app"
+        ],
+        "clean_annual_fee":0,
+        "clean_rewards":[
+            [
+                5.0,
+                "Percentage",
+                "rewards",
+                "Other"
+            ],
+            [
+                2.0,
+                "Percentage",
+                "rewards",
+                "All Purchases"
+            ]
+        ]
+    }
+]
