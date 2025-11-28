@@ -893,12 +893,6 @@
                 "Groceries & Dining"
             ],
             [
-                1.0,
-                "Percentage",
-                "rewards",
-                "Groceries & Dining"
-            ],
-            [
                 6.0,
                 "Percentage",
                 "cash back",
@@ -1245,12 +1239,6 @@
                 "Groceries & Dining"
             ],
             [
-                1.0,
-                "Multiplier",
-                "rewards",
-                "Groceries & Dining"
-            ],
-            [
                 4.0,
                 "Multiplier",
                 "points",
@@ -1421,18 +1409,6 @@
         "clean_annual_fee":0,
         "clean_rewards":[
             [
-                6.0,
-                "Percentage",
-                "cash back",
-                "Groceries & Dining"
-            ],
-            [
-                3.0,
-                "Percentage",
-                "cash back",
-                "Groceries & Dining"
-            ],
-            [
                 2.0,
                 "Percentage",
                 "cash back",
@@ -1462,12 +1438,6 @@
                 6.0,
                 "Percentage",
                 "cash back",
-                "Groceries & Dining"
-            ],
-            [
-                1.0,
-                "Percentage",
-                "rewards",
                 "Groceries & Dining"
             ],
             [
@@ -2238,33 +2208,15 @@
                 "Groceries & Dining"
             ],
             [
-                1.0,
-                "Percentage",
-                "rewards",
-                "Groceries & Dining"
-            ],
-            [
                 3.0,
                 "Percentage",
                 "cash back",
                 "Retail & Entertainment"
             ],
             [
-                1.0,
-                "Percentage",
-                "rewards",
-                "Retail & Entertainment"
-            ],
-            [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
-            ],
-            [
-                1.0,
-                "Percentage",
-                "rewards",
                 "Gas & Utilities"
             ],
             [
@@ -2346,18 +2298,6 @@
         ],
         "clean_annual_fee":0,
         "clean_rewards":[
-            [
-                6.0,
-                "Percentage",
-                "cash back",
-                "Groceries & Dining"
-            ],
-            [
-                3.0,
-                "Percentage",
-                "cash back",
-                "Groceries & Dining"
-            ],
             [
                 2.0,
                 "Percentage",
@@ -2526,12 +2466,6 @@
                 6.0,
                 "Percentage",
                 "cash back",
-                "Groceries & Dining"
-            ],
-            [
-                1.0,
-                "Percentage",
-                "rewards",
                 "Groceries & Dining"
             ],
             [
@@ -3058,12 +2992,6 @@
                 "Groceries & Dining"
             ],
             [
-                1.0,
-                "Percentage",
-                "rewards",
-                "Groceries & Dining"
-            ],
-            [
                 6.0,
                 "Percentage",
                 "cash back",
@@ -3161,33 +3089,15 @@
                 "Groceries & Dining"
             ],
             [
-                1.0,
-                "Percentage",
-                "rewards",
-                "Groceries & Dining"
-            ],
-            [
                 3.0,
                 "Percentage",
                 "cash back",
                 "Retail & Entertainment"
             ],
             [
-                1.0,
-                "Percentage",
-                "rewards",
-                "Retail & Entertainment"
-            ],
-            [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
-            ],
-            [
-                1.0,
-                "Percentage",
-                "rewards",
                 "Gas & Utilities"
             ],
             [
@@ -3252,12 +3162,6 @@
                 4.0,
                 "Multiplier",
                 "points",
-                "Groceries & Dining"
-            ],
-            [
-                1.0,
-                "Multiplier",
-                "rewards",
                 "Groceries & Dining"
             ],
             [

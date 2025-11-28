@@ -43,6 +43,7 @@ def detect_category(clause_lower):
 
 def clean_rate(s: str) -> list[tuple]:
     results = []
+    s = re.sub(r'\([^)]*\)', '', s)
     s_lower = s.lower().replace("®", "").replace("℠", "").replace("™", "")
     clauses = [s]
     
