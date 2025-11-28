@@ -4,8 +4,9 @@ from scraper_core import link2soup
 import pandas as pd
 import re
 from tqdm import tqdm
+from nerdwallet_cleaner import clean_rewards_list, clean_annual_fee
 
-def scrape_nerdwallet():
+def scrape_nerdwallet(clean = False):
     main_soup = link2soup("https://www.nerdwallet.com/credit-cards")
     
     hrefs = [
@@ -59,4 +60,9 @@ def scrape_nerdwallet():
             cards["issuer"].append(issuer)
             
     df = pd.DataFrame(cards)
+
+    if clean:
+        df["clean_annual_fee"] = df["annual_fee"].apply(clean_annual_fee)
+        df["clean_rewards"] = df["rewards"].apply(clean_rewards_list)
+    
     return df
