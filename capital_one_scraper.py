@@ -5,13 +5,14 @@ import re
 from tqdm import tqdm
 from scraper_core import link2soup
 import pandas as pd
+from capital_one_cleaner import clean_annual_fee, clean_rewards_list
 
 score_conversion = {
     "Good-Excellent": "Very Good",
     "Rebuilding": "Poor"
 }
 
-def scrape_capital_one(score = False):
+def scrape_capital_one(score = False, clean = False):
     soup = link2soup("https://www.capitalone.com/credit-cards/compare/")
     card_container = soup.select("card-product-all-cards-list-item")
     card_container = card_container[0:-1] #have some weird formatting with an extra block
@@ -47,4 +48,9 @@ def scrape_capital_one(score = False):
         cards["issuer"].append("Capital One")
 
     df = pd.DataFrame(cards)
+
+    if clean:
+        df["clean_annual_fee"] = df["annual_fee"].apply(clean_annual_fee)
+        df["clean_rewards"] = df["rewards"].apply(clean_rewards_list)
+        
     return df
