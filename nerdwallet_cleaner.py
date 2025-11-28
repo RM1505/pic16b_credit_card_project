@@ -10,14 +10,11 @@ TYPES = {
 }
 
 CATEGORIES = {
-    "Travel": ["chase travel", "capital one travel", "amex travel", "cititravel.com", "travel center", "amextravel.com", "capital one entertainment", "purchases on travel"],
-    "Hotels & Lodging": ["hotel", "hotels", "lodging", "hyatt stays", "marriott bonvoy", "hilton portfolio", "ihg hotels & resorts", "vacation rental", "prepaid hotel bookings"],
-    "Car/Transit": ["rental car", "rental cars", "transit", "taxis", "rideshare", "parking", "tolls", "trains", "buses", "local transit", "commuting"],
-    "Groceries & Dining": ["dining", "restaurants", "takeout", "delivery services", "supermarkets", "grocery store", "grocery stores", "wholesale club", "wholesale clubs", "amazon fresh", "whole foods market", "uber eats"],
-    "Gas & Utilities": ["gas station", "gas stations", "ev charging station", "streaming subscription", "streaming subscriptions", "select streaming services", "select streaming", "phone plans", "cable and streaming service", "popular streaming services"],
-    "Retail & Entertainment": ["entertainment", "drugstore", "drugstores", "online retail purchases", "online groceries", "online retail", "amazon.com", "partner merchants", "local transit", "online retail purchases"],
-    "Flights/Airlines": ["flights", "air travel", "airlines", "airline", "delta purchases", "united purchases", "southwest airlines", "united purchases"],
-    "All Purchases": ["all other", "every purchase", "all purchases", "everything else", "everywhere else", "other purchases", "eligible purchases", "all other eligible purchases", "on all purchases", "unlimited cash rewards"],
+    "Travel": ["chase travel", "capital one travel", "amex travel", "cititravel.com", "travel center", "amextravel.com", "capital one entertainment", "purchases on travel", "hotel", "flight", "vacation", "travel", "rental car", "rental cars", "flights", "air travel", "airlines", "airline", "delta purchases", "united purchases", "southwest airlines", "united purchases","hotel", "hotels", "lodging", "hyatt stays", "marriott bonvoy", "hilton portfolio", "ihg hotels & resorts", "vacation rental", "prepaid hotel bookings", "rental car", "rental cars", "transit", "taxis", "rideshare"],
+    "Groceries & Dining": ["dining", "restaurants", "takeout", "delivery services", "supermarkets", "grocery store", "grocery stores", "wholesale club", "wholesale clubs", "amazon fresh", "whole foods market", "uber eats", "grocery store", "dining", "food delivery", "restaurant", "entertainment", "streaming service"],
+    "Gas & Utilities": ["gas station", "gas stations", "ev charging station", "phone plans", "cable and streaming service"],
+    "Retail & Entertainment": ["entertainment", "drugstore", "drugstores", "online retail purchases", "online groceries", "online retail", "amazon.com", "partner merchants", "local transit", "online retail purchases", "T-Mobile", "REI", "Williams-Sonoma", "Pottery Barn", "West Elm", "Bass Pro Shops", "Cabela’s", "BJ’s", "Kohl’s", "streaming subscription", "streaming subscriptions", "select streaming services", "select streaming","popular streaming services"],
+    "All Purchases": ["all other", "every purchase", "all purchases", "everything else", "everywhere else", "other purchases", "eligible purchases", "all other eligible purchases", "on all purchases", "unlimited cash rewards", "all other", "every purchase", "all purchases", "everything else", "everywhere else", "anywhere", "business", "other purchases", "anywhere mastercard is accepted"],
     "Caps & Limits": ["up to", "per year", "quarterly maximum", "then 1%", "first year", "after the first year", "combined purchases", "first year"]
 }
 

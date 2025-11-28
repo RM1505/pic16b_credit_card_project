@@ -776,7 +776,7 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -788,7 +788,7 @@
                 2.0,
                 "Multiplier",
                 "points",
-                "All Purchases"
+                "Travel"
             ],
             [
                 1.0,
@@ -835,13 +835,13 @@
                 3.0,
                 "Percentage",
                 "cash back",
-                "Retail & Entertainment"
+                "Groceries & Dining"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -896,13 +896,13 @@
                 6.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Retail & Entertainment"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -927,13 +927,13 @@
                 5.0,
                 "Multiplier",
                 "membership rewards points",
-                "Flights\/Airlines"
+                "Travel"
             ],
             [
                 5.0,
                 "Multiplier",
                 "membership rewards points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 1.0,
@@ -1100,13 +1100,13 @@
                 3.0,
                 "Percentage",
                 "cash back",
-                "Retail & Entertainment"
+                "Groceries & Dining"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -1152,7 +1152,7 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -1164,7 +1164,7 @@
                 2.0,
                 "Multiplier",
                 "points",
-                "All Purchases"
+                "Travel"
             ],
             [
                 1.0,
@@ -1283,13 +1283,13 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Flights\/Airlines"
+                "Travel"
             ],
             [
                 3.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 3.0,
@@ -1444,13 +1444,13 @@
                 6.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Retail & Entertainment"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -1501,7 +1501,7 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Flights\/Airlines"
+                "Travel"
             ],
             [
                 2.0,
@@ -1513,13 +1513,13 @@
                 2.0,
                 "Multiplier",
                 "points",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 2.0,
                 "Multiplier",
                 "points",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -1544,13 +1544,13 @@
                 9.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 2.0,
                 "Multiplier",
                 "points",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -1578,7 +1578,7 @@
                 12.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 6.0,
@@ -1627,7 +1627,7 @@
                 4.0,
                 "Multiplier",
                 "points",
-                "Flights\/Airlines"
+                "Travel"
             ],
             [
                 2.0,
@@ -1658,7 +1658,7 @@
                 17.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 3.0,
@@ -1702,7 +1702,7 @@
                 2.0,
                 "Multiplier",
                 "miles",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 1.0,
@@ -1762,7 +1762,7 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -1789,13 +1789,13 @@
                 3.0,
                 "Multiplier",
                 "miles",
-                "Flights\/Airlines"
+                "Travel"
             ],
             [
                 3.0,
                 "Multiplier",
                 "miles",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 2.0,
@@ -1834,7 +1834,7 @@
                 26.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 5.0,
@@ -2373,13 +2373,13 @@
                 3.0,
                 "Percentage",
                 "cash back",
-                "Retail & Entertainment"
+                "Groceries & Dining"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -2472,13 +2472,13 @@
                 6.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Retail & Entertainment"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -2516,7 +2516,7 @@
                 2.0,
                 "Multiplier",
                 "miles",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 1.0,
@@ -2595,7 +2595,7 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -2607,7 +2607,7 @@
                 2.0,
                 "Multiplier",
                 "points",
-                "All Purchases"
+                "Travel"
             ],
             [
                 1.0,
@@ -2687,7 +2687,7 @@
                 17.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 3.0,
@@ -2757,13 +2757,13 @@
                 3.0,
                 "Percentage",
                 "cash back",
-                "Retail & Entertainment"
+                "Groceries & Dining"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -2995,13 +2995,13 @@
                 6.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Retail & Entertainment"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -3048,13 +3048,13 @@
                 3.0,
                 "Percentage",
                 "cash back",
-                "Retail & Entertainment"
+                "Groceries & Dining"
             ],
             [
                 3.0,
                 "Percentage",
                 "cash back",
-                "Gas & Utilities"
+                "Groceries & Dining"
             ],
             [
                 3.0,
@@ -3129,7 +3129,7 @@
                 2.0,
                 "Percentage",
                 "cash back",
-                "Car\/Transit"
+                "Travel"
             ],
             [
                 1.0,
@@ -3209,13 +3209,13 @@
                 3.0,
                 "Multiplier",
                 "points",
-                "Flights\/Airlines"
+                "Travel"
             ],
             [
                 3.0,
                 "Multiplier",
                 "points",
-                "Hotels & Lodging"
+                "Travel"
             ],
             [
                 3.0,
