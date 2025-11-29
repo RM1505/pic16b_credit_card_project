@@ -1,31 +1,7 @@
 from typing import Dict
 
-# Nerdwallet BASELINE values (conservative estimates)
-CPP_TABLE_BASELINE: Dict[str, Dict[str, float]] = {
-    "default": {
-        "points": 1.0,
-        "miles":  1.0,
-    },
-    "American Express": {
-        "points": 0.6,
-        "miles": 0.875 # Average of 0.75 and 1
-    },
-    "Capital One": {
-        "points": 0.5,
-        "miles": 1.0,
-    },
-    "Chase": {
-        "points": 1.0,
-        "miles": 1.25, # Average of 1.0 and 1.5
-    },
-    "Citi": {
-        "points": 0.75, # Average of 0.5 and 1
-        "miles": 1.0,
-    }
-}
-
-# Nerdwallet OPTIMISTIC Values
-CPP_TABLE_OPTIMISTIC: Dict[str, Dict[str, float]] = {
+# According to NerdWallet, using optimistic values
+CPP_TABLE: Dict[str, Dict[str, float]] = {
     "default": {
         "points": 1.0,
         "miles":  1.0,
