@@ -1,42 +1,42 @@
 from nicegui import ui
 
 questions = [
-    {"question": "Enter monthly travel spending:"},
-    {"question": "Enter monthly dining spending:"},
-    {"question": "Enter monthly entertainment spending:"},
-    {"question": "Enter monthly groceries spending:"},
-    {"question": "Enter monthly transit spending:"},
-    {"question": "Enter monthly spending in any other categories:"}
+    "Monthly travel spending",
+    "Monthly dining spending",
+    "Monthly entertainment spending",
+    "Monthly groceries spending",
+    "Monthly transit spending",
+    "Monthly spending (other categories)",
 ]
 
-user_inputs = []
+def annual_spend(values):
+    return sum(values) * 12
 
-def annual_spend(a, b, c):
-    return (a + b + c) * 12
 
-quiz_container = ui.column()
+with ui.card().classes("w-1/2 mx-auto mt-10 p-6"):
+    ui.label("Tell us about your spending habits:").classes("text-2xl font-bold mb-4")
 
-with quiz_container:
-    ui.label("Tell us about your spending habits:")
-    for q in questions:
-        ui.label(q["question"])
-        num_input = ui.number()
-        user_inputs.append(num_input)
-    submit_btn = ui.button("Submit")
+    inputs = []
+    with ui.column().classes("gap-3"):
+        for q in questions:
+            with ui.row().classes("items-center gap-4"):
+                ui.label(q + ":").classes("w-56")
+                num = ui.number(min=0, format='%.2f').classes("w-40")
+                inputs.append(num)
 
-def submit_quiz():
-    try:
-        values = [field.value for field in user_inputs]
-    except Exception:
-        ui.notify("Enter valid numbers.")
-        return
-    
-    result = annual_spend(*values)
-    
-    quiz_container.clear()
-    
-    ui.label(f"Your annual spending: {result}")
+    result_label = ui.label("").classes("text-xl font-medium mt-5 text-green-600")
 
-submit_btn.on('click', submit_quiz)
+    def submit():
+        try:
+            values = [float(i.value or 0) for i in inputs]
+        except ValueError:
+            ui.notify("Please enter valid numbers.", color="red")
+            return
+        
+        total = annual_spend(values)
+        result_label.set_text(f"Your estimated annual spending: ${total:,.2f}")
+
+    ui.button("Calculate Annual Spending", on_click=submit).classes("mt-4")
+
 
 ui.run()
