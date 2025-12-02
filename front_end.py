@@ -2,8 +2,11 @@ from nicegui import ui
 
 questions = [
     {"question": "Enter monthly travel spending:"},
-    {"question": "Enter monthly grocery spending:"},
-    {"question": "Enter monthly gas spending:"}
+    {"question": "Enter monthly dining spending:"},
+    {"question": "Enter monthly entertainment spending:"},
+    {"question": "Enter monthly groceries spending:"},
+    {"question": "Enter monthly transit spending:"},
+    {"question": "Enter monthly spending in any other categories:"}
 ]
 
 user_inputs = []
