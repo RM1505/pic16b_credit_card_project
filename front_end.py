@@ -4,6 +4,7 @@ import json
 def load_cards(path: str = "clean_cards.json"):
 	with open(path, "r", encoding="utf-8") as f:
 		data = json.load(f)
+	return data
 
 cards = load_cards()
 
@@ -29,6 +30,10 @@ with cards_dialog:
 with ui.row().classes("w-full justify-center mt-8 mb-4"):
     ui.label("Welcome to your Credit Card Optimizer!") \
         .classes("text-5xl font-bold text-green-600")
+
+with ui.row().classes("w-full justify-center mt-8 mb-4"):
+    ui.label("We help you choose the best credit card for you.") \
+        .classes("text-3xl font-bold text-green-500")
 
 questions = [
     "Monthly travel spending",
