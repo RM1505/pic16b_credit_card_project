@@ -1,62 +1,49 @@
 from typing import Dict
 
 # According to NerdWallet, using optimistic values
-CPP_TABLE: Dict[str, Dict[str, float]] = {
+CPP_TABLE: Dict[str, Dict[str, float]]= {
     "default": {
-        "points": 1.0,
-        "miles":  1.0,
+        "miles": 0.01,
+        "points": 0.01
     },
+
     "American Express": {
-        "points": 1.6,
+        "miles": 0.016,
+        "points": 0.006
     },
+
     "Capital One": {
-        "miles": 1.6,
+        "miles": 0.016,
+        "points": 0.005
     },
+
     "Chase": {
-        "points": 1.8,
+        "miles": 0.018,
+        "points": 0.008
     },
+
     "Citi": {
-        "points": 1.6,
+        "miles": 0.016,
+        "points": 0.01,
     },
+
     "Bank of America": {
-        "points": 1.0,
+        "miles": 0.01,
+        "points": 0.006
     },
+
     "Wells Fargo": {
-        "points": 1.0,
+        "miles": 0.01,
+        "points": 0.01
     },
+
     "U.S. Bank": {
-        "points": 1.5,
+        "miles": 0.015,
+        "points": 0.012,
     },
+
     "Discover": {
-        "miles": 1.0,
-    },
+        "miles": 0.01,
+        "points":  0.01
+    }
 }
-
-def get_cpp(card: Dict[str, str], unit: str, cpp_table: Dict[str, Dict[str, float]] = CPP_TABLE) -> float:
-    """
-    Decide cents-per-point for a given card and reward unit.
-
-    Priority:
-      1. Card-name overrides
-      2. Issuer-specific overrides
-      3. Default table
-      4. Otherwise 0.0
-    """
-    unit = unit.lower()
-    name = card.get("name", "")
-    issuer = card.get("issuer", "")
-
-    # 1) Card-specific "overrides" issuer default values
-    if name in cpp_table and unit in cpp_table[name]:
-        return cpp_table[name][unit]
-
-    # 2) Issuer-specific
-    if issuer in cpp_table and unit in cpp_table[issuer]:
-        return cpp_table[issuer][unit]
-
-    # 3) Default/fallback
-    if "default" in cpp_table and unit in cpp_table["default"]:
-        return cpp_table["default"][unit]
-
-    # 4) Unknown
-    return 0.0
