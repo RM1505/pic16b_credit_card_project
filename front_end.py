@@ -1,5 +1,9 @@
 from nicegui import ui
 
+with ui.row().classes("w-full justify-center mt-8 mb-4"):
+    ui.label("Welcome to your Credit Card Optimizer!") \
+        .classes("text-5xl font-bold text-green-600")
+
 questions = [
     "Monthly travel spending",
     "Monthly dining spending",
