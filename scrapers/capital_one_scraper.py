@@ -3,9 +3,9 @@ import requests
 from urllib.parse import urljoin
 import re
 from tqdm import tqdm
-from scraper_core import link2soup
+from scrapers.scraper_core import link2soup
 import pandas as pd
-from capital_one_cleaner import clean_annual_fee, clean_rewards_list
+from cleaners.capital_one_cleaner import clean_annual_fee, clean_rewards_list
 
 score_conversion = {
     "Good-Excellent": "Very Good",

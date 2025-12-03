@@ -3,7 +3,7 @@ import requests
 from urllib.parse import urljoin
 import re
 from tqdm import tqdm
-from scraper_core import link2soup
+from scrapers.scraper_core import link2soup
 import pandas as pd
 
 def scrape_chase():

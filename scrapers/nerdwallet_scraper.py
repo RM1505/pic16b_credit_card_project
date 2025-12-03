@@ -1,10 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
-from scraper_core import link2soup
+from scrapers.scraper_core import link2soup
 import pandas as pd
 import re
 from tqdm import tqdm
-from nerdwallet_cleaner import clean_rewards_list, clean_annual_fee
+from cleaners.nerdwallet_cleaner import clean_rewards_list, clean_annual_fee
 
 def scrape_nerdwallet(clean = False, discluded_providers = []):
     
