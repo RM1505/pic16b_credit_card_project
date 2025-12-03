@@ -17,7 +17,19 @@ CPP_TABLE: Dict[str, Dict[str, float]] = {
     },
     "Citi": {
         "points": 1.6,
-    }
+    },
+    "Bank of America": {
+        "points": 1.0,
+    },
+    "Wells Fargo": {
+        "points": 1.0,
+    },
+    "U.S. Bank": {
+        "points": 1.5,
+    },
+    "Discover": {
+        "miles": 1.0,
+    },
 }
 
 def get_cpp(card: Dict[str, str], unit: str, cpp_table: Dict[str, Dict[str, float]] = CPP_TABLE) -> float:
