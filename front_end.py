@@ -1,4 +1,30 @@
 from nicegui import ui
+import json
+
+def load_cards(path: str = "clean_cards.json"):
+	with open(path, "r", encoding="utf-8") as f:
+		data = json.load(f)
+
+cards = load_cards()
+
+cards_dialog = ui.dialog()
+
+with cards_dialog:
+    with ui.card().classes("w-2/3 mx-auto p-6 mt-4"):
+        ui.label("All Credit Cards").classes(
+            "text-3xl font-bold text-blue-600 mb-4 text-center"
+        )
+        ui.label(f"Total cards found: {len(cards)}").classes(
+            "text-lg font-medium mb-4"
+        )
+
+        with ui.column().classes("gap-2 max-h-[500px] overflow-y-auto"):
+            for card in cards:
+                ui.label(f"• {card.get('name', 'Unnamed Card')}").classes("text-md")
+
+        ui.button("Close", on_click=cards_dialog.close).classes(
+            "mt-4 bg-gray-300 px-4 py-2 rounded-lg"
+        )
 
 with ui.row().classes("w-full justify-center mt-8 mb-4"):
     ui.label("Welcome to your Credit Card Optimizer!") \
@@ -42,5 +68,8 @@ with ui.card().classes("w-1/2 mx-auto mt-10 p-6"):
 
     ui.button("Calculate Annual Spending", on_click=submit).classes("mt-4")
 
+with ui.row().classes("w-full justify-center mt-6"):
+    ui.button("View All Credit Cards", on_click=cards_dialog.open) \
+        .classes("bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700")
 
 ui.run()
