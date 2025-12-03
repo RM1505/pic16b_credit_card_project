@@ -6,7 +6,8 @@ import re
 from tqdm import tqdm
 from nerdwallet_cleaner import clean_rewards_list, clean_annual_fee
 
-def scrape_nerdwallet(clean = False):
+def scrape_nerdwallet(clean = False, discluded_providers = []):
+    
     main_soup = link2soup("https://www.nerdwallet.com/credit-cards")
     
     hrefs = [
@@ -28,6 +29,17 @@ def scrape_nerdwallet(clean = False):
         
         for block in blocks:
             name = block.select("h3.MuiTypography-root.MuiTypography-body1.css-monr6r")[0].text
+
+            try:
+                issuer = block.select("span.MuiTypography-root.MuiTypography-bodySmall.MuiTypography-alignCenter.css-1uw5l8w")[0].text
+                issuer = re.sub(r"on | website", "", issuer).split("'")[0]
+            except IndexError:
+                issuer = re.split(r"[®™]", name)[0]
+
+            name = re.sub(r"®|™", "", name)
+
+            if any(issuer.lower() in s for s in discluded_providers):
+                continue
             
             table = block.select("div.MuiGrid-root.MuiGrid-container.MuiGrid-direction-xs-row.css-7zk183")
             first_row = table[0].select("div.MuiGrid-root.MuiGrid-direction-xs-row.css-43v8ft")
@@ -48,13 +60,7 @@ def scrape_nerdwallet(clean = False):
                     div.text+" "+div.find_next_sibling("span").text for div in reward_block[0].select("div.MuiBox-root")
                 ]
             cards["rewards"].append(rewards)
-            try:
-                issuer = block.select("span.MuiTypography-root.MuiTypography-bodySmall.MuiTypography-alignCenter.css-1uw5l8w")[0].text
-                issuer = re.sub(r"on | website", "", issuer).split("'")[0]
-            except IndexError:
-                issuer = re.split(r"[®™]", name)[0]
-
-            name = re.sub(r"®|™", "", name)
+            
             cards["name"].append(name)
 
             cards["issuer"].append(issuer)
