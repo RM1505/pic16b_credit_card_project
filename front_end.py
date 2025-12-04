@@ -4,7 +4,7 @@ import import_ipynb
 from solver import get_dicts, optimize_cardspace
 import pandas as pd
 
-def load_cards(path: str = "clean_cards.json"):
+def load_cards(path: str = "cards_w_score.json"):
 	with open(path, "r", encoding="utf-8") as f:
 		data = json.load(f)
 	return data
