@@ -85,7 +85,7 @@ def get_dicts(df):
             conversion = get_conversion_rate(issuer, unit)
             cash_rate = value * conversion
 
-            if rtype in ("Multiplier", "Per Unit"):
+            if rtype in ("Multiplier", "Per Unit", "Percentage"):
                 # keep best rate for this category
                 rates[category] = max(rates.get(category, 0), cash_rate)
 
