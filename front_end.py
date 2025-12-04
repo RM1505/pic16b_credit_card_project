@@ -1,6 +1,5 @@
 from nicegui import ui
 import json
-import import_ipynb
 from solver import get_dicts, optimize_cardspace
 import pandas as pd
 
@@ -30,81 +29,90 @@ with cards_dialog:
             "mt-4 bg-gray-300 px-4 py-2 rounded-lg"
         )
 
-with ui.row().classes("w-full justify-center mt-8 mb-4"):
-    ui.label("Welcome to your Credit Card Optimizer!") \
-        .classes("text-5xl font-bold text-green-600")
+with ui.column().classes(
+    "min-h-screen w-full items-center bg-white text-black"
+):
 
-with ui.row().classes("w-full justify-center mt-8 mb-4"):
-    ui.label("We help you choose the best credit card for you.") \
-        .classes("text-3xl font-bold text-green-500")
+    ui.space()
 
-category_keys = [
-    "Travel",
-    "Groceries & Dining",
-    "Gas & Utilities",
-    "Retail & Entertainment",
-    "All Purchases"
-]
-
-questions = [f"Monthly spend on {cat}" for cat in category_keys]
-
-df= pd.read_json("cards_w_score.json")
-
-
-with ui.card().classes("w-1/2 mx-auto mt-10 p-6"):
-    ui.label("Tell us about your spending habits:").classes("text-2xl font-bold mb-4")
-
-    inputs = {
-        "Travel": 0,
-        "Groceries & Dining": 0,
-        "Gas & Utilities": 0,
-        "Retail & Entertainment": 0,
-        "All Purchases": 0
-    }
-
-    with ui.column().classes("gap-3"):
-        for i in range(len(questions)):
-            with ui.row().classes("items-center gap-4"):
-                ui.label(questions[i] + ":").classes("w-56")
-                num = ui.number(min=0, format='%.2f').classes("w-40")
-                inputs[category_keys[i]] = num
-        ui.label("Which best describes your credit score?")
-        dropdown = ui.select(
-            options=["Excellent", "Very Good", "Good", "Fair", "Poor"],
-            value=None,                
-            with_input=False           
+    with ui.column().classes("items-center text-center px-4"):
+        ui.label("Welcome to your Credit Card Optimizer!").classes(
+            "text-5xl font-extrabold text-emerald-400"
+        )
+        ui.label(
+            "We help choose the best credit card for you. Turn your spending into maximum rewards.").classes(
+            "text-3xl font-bold text-green-500"
         )
 
-    result_html = ui.html("", sanitize=None).classes("text-xl font-medium mt-5 text-green-600")
+        with ui.row().classes("mt-4 gap-3"):
+            ui.button("View All Credit Cards", on_click=cards_dialog.open).classes(
+                "bg-emerald-500 hover:bg-emerald-600 text-white font-semibold "
+                "px-4 py-2 rounded-full text-sm md:text-base shadow-lg shadow-emerald-900/50"
+            )
+            ui.label("💳").classes("text-3xl md:text-4xl")
 
-    def submit():
-        try:
-            solver_inputs = {}
-            for key, element in inputs.items():
-                solver_inputs[key] = float(element.value or 0.0)
-        except ValueError:
-            ui.notify("Please enter valid numbers.", color="red")
-            return
+    category_keys = [
+        "Travel",
+        "Groceries & Dining",
+        "Gas & Utilities",
+        "Retail & Entertainment",
+        "All Purchases"
+    ]
+
+    questions = [f"Monthly spend on {cat}" for cat in category_keys]
+
+    df= pd.read_json("cards_w_score.json")
+
+    with ui.card().classes("w-1/2 mx-auto mt-10 p-6"):
+        ui.label("Tell us about your spending habits:").classes("text-2xl font-bold mb-4")
+
+        inputs = {
+            "Travel": 0,
+            "Groceries & Dining": 0,
+            "Gas & Utilities": 0,
+            "Retail & Entertainment": 0,
+            "All Purchases": 0
+        }
+
+        with ui.column().classes("gap-3"):
+            for i in range(len(questions)):
+                with ui.row().classes("items-center gap-4"):
+                    ui.label(questions[i] + ":").classes("w-56")
+                    num = ui.number(min=0, format='%.2f').classes("w-40")
+                    inputs[category_keys[i]] = num
+            ui.label("Which best describes your credit score?")
+            dropdown = ui.select(
+                options=["Excellent", "Very Good", "Good", "Fair", "Poor"],
+                value=None,                
+                with_input=False           
+            )
+
+        result_html = ui.html("", sanitize=None).classes("text-xl font-medium mt-5 text-green-600")
+
+        def submit():
+            try:
+                solver_inputs = {}
+                for key, element in inputs.items():
+                    solver_inputs[key] = float(element.value or 0.0)
+            except ValueError:
+                ui.notify("Please enter valid numbers.", color="red")
+                return
         
-        realistic_cards = df[df["score"] == dropdown.value]
-        dict_cards, fees= get_dicts(realistic_cards)
+            realistic_cards = df[df["score"] == dropdown.value]
+            dict_cards, fees= get_dicts(realistic_cards)
 
-        chosen, total, held, breakdown = optimize_cardspace(dict_cards, fees, solver_inputs, 800)
-        #result_label.set_text(f"Your estimated annual spending: ${chosen:,.2f}")
-        output_lines = [f"Your optimal wallet is:"]
-        elements_used = []
-        for key, element in chosen.items():
-            if element not in elements_used:
-                elements_used.append(element)
-                output_lines.append(f"• {element} ")
-        output_lines.append(f"Estimated annual rewards: ${total:,.2f}")
-        html_content = "<br>".join(output_lines)
-        result_html.set_content(html_content)
+            chosen, total, held, breakdown = optimize_cardspace(dict_cards, fees, solver_inputs, 800)
+            #result_label.set_text(f"Your estimated annual spending: ${chosen:,.2f}")
+            output_lines = [f"Your optimal wallet is:"]
+            elements_used = []
+            for key, element in chosen.items():
+                if element not in elements_used:
+                    elements_used.append(element)
+                    output_lines.append(f"• {element} ")
+            output_lines.append(f"Estimated Annual Rewards: ${total:,.2f}")
+            html_content = "<br>".join(output_lines)
+            result_html.set_content(html_content)
 
-    ui.button("Calculate Annual Spending", on_click=submit).classes("mt-4")
-
-with ui.row().classes("w-full justify-center mt-6"):
-    ui.button("View All Credit Cards", on_click=cards_dialog.open) \
-        .classes("bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700")
+        ui.button("Calculate Annual Rewards", on_click=submit).classes("mt-4")
 
 ui.run()
