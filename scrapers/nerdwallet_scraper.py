@@ -5,8 +5,23 @@ import pandas as pd
 import re
 from tqdm import tqdm
 from cleaners.nerdwallet_cleaner import clean_rewards_list, clean_annual_fee
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
-def scrape_nerdwallet(clean = False, discluded_providers = []):
+score_conversion = {
+    "Rebuilding": "Poor",
+    "Fair": "Fair",
+    "Excellent": "Excellent",
+    "Poor": "Poor",
+    "Good - Excellent": "Very Good",
+    "Poor - Fair": "Poor"
+}
+
+
+def scrape_nerdwallet(clean = False, discluded_providers = [], score = False):
     
     main_soup = link2soup("https://www.nerdwallet.com/credit-cards")
     
@@ -22,14 +37,27 @@ def scrape_nerdwallet(clean = False, discluded_providers = []):
         "annual_fee" : [],
         "rewards" : []
     }
+
+    if score:
+        cards["score"] = []
     
     for href in tqdm(hrefs):
-        best_soup = link2soup(href)
+        options = Options()
+        options.add_argument("--headless")
+        driver = webdriver.Chrome(options=options)
+        driver.get(href)
+
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "div.MuiGrid-root.MuiGrid-container.MuiGrid-direction-xs-row.css-1a97p8s div.MuiBox-root.css-79elbk"))
+        )
+        html = driver.page_source
+        
+        best_soup = BeautifulSoup(html, "html.parser")
         blocks = best_soup.select("div.MuiBox-root.css-1hlkqtw")
         
         for block in blocks:
             name = block.select("h3.MuiTypography-root.MuiTypography-body1.css-monr6r")[0].text
-
+            credit_score = 0
             try:
                 issuer = block.select("span.MuiTypography-root.MuiTypography-bodySmall.MuiTypography-alignCenter.css-1uw5l8w")[0].text
                 issuer = re.sub(r"on | website", "", issuer).split("'")[0]
@@ -50,6 +78,18 @@ def scrape_nerdwallet(clean = False, discluded_providers = []):
             for entry in first_row:
                 if entry.select("div.MuiBox-root.css-dayuin")[0].text == "Annual fee":
                     annual_fee = entry.select("div.MuiBox-root.css-1ffk1vi")[0].text
+                if "Recommended credit" in entry.select("div.MuiBox-root.css-dayuin")[0].text:
+                    credit_score = 1
+
+            rows = table[0].select("div.MuiGrid-root.MuiGrid-container.MuiGrid-direction-xs-row.css-1a97p8s")
+            for row in rows:
+                if "Recommended credit" in row.select("div.MuiBox-root.css-dayuin")[0].text:            
+                    credit_score_raw = row.text
+                    for k in score_conversion:
+                        if k in credit_score_raw:
+                            credit_score = score_conversion[k]
+                
+                
         
             cards["annual_fee"].append(annual_fee)
             
@@ -59,6 +99,9 @@ def scrape_nerdwallet(clean = False, discluded_providers = []):
                 rewards = [
                     div.text+" "+div.find_next_sibling("span").text for div in reward_block[0].select("div.MuiBox-root")
                 ]
+            if score:
+                cards["score"].append(credit_score)     
+            
             cards["rewards"].append(rewards)
             
             cards["name"].append(name)

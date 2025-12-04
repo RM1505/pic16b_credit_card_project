@@ -1,0 +1,4075 @@
+[
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Sapphire Preferred Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Points on travel purchased through Chase Travel\u2120.",
+      "3x Points on dining.",
+      "3x Points on select streaming services.",
+      "3x Points on online groceries.",
+      "2x Points on all other travel purchases.",
+      "1x Point on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Retail & Entertainment"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Preferred Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0 intro annual fee for the first year, then $95.",
+    "rewards":[
+      "6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).",
+      "6% Cash Back on select U.S. streaming subscriptions.",
+      "3% Cash Back at U.S. gas stations and on transit (including taxis\/rideshare, parking, tolls, trains, buses and more).",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Active Cash Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Unlimited Cash rewards on purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"American Express Platinum Card",
+    "issuer":"American Express",
+    "annual_fee":"$895",
+    "rewards":[
+      "5x Membership Rewards\u00ae Points on flights purchased directly from airlines or through American Express Travel\u00ae on up to $500,000 on these purchases per calendar year.",
+      "5x Membership Rewards\u00ae Points on prepaid hotel bookings through American Express Travel\u00ae, including Fine Hotels + Resorts\u00ae and The Hotel Collection bookings.",
+      "1x Membership Rewards\u00ae Points on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":895,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "membership rewards points",
+        "Travel"
+      ],
+      [
+        5.0,
+        "Multiplier",
+        "membership rewards points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "membership rewards points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Reflect Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Discover it Cash Back - 18 Month Intro Balance Transfer Offer",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Simplicity Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"U.S. Bank Shield Visa Card",
+    "issuer":"U.S. Bank",
+    "annual_fee":"$0",
+    "rewards":[
+      "4% Cash back on prepaid air, hotel and car reservations booked directly in the Travel Center."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ]
+    ]
+  },
+  {
+    "name":"Bank of America Customized Cash Rewards credit card",
+    "issuer":"Bank of America",
+    "annual_fee":"$0",
+    "rewards":[
+      "6% Cash back for the first year in the category of your choice (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "3% Cash back in the category of your choice after the first year (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "2% Cash back at grocery stores and wholesale clubs (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Sapphire Preferred Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Points on travel purchased through Chase Travel\u2120.",
+      "3x Points on dining.",
+      "3x Points on select streaming services.",
+      "3x Points on online groceries.",
+      "2x Points on all other travel purchases.",
+      "1x Point on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Retail & Entertainment"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"American Express Gold Card",
+    "issuer":"American Express",
+    "annual_fee":"$325",
+    "rewards":[
+      "4x Points when you dine at restaurants worldwide.",
+      "4x Points at U.S. supermarkets (on up to $25,000 per year in purchases, then 1X).",
+      "4x Points for Uber Eats purchases made at restaurants or U.S. supermarkets (after using your $120 in Uber Cash)",
+      "3x Points on flights booked directly with airlines or on amextravel.com.",
+      "1x Point on all other eligible purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":325,
+    "clean_rewards":[
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Flex",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on up to $1,500 in combined purchases in bonus categories each quarter you activate.",
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on dining.",
+      "3% Cash back at drugstores.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Strata Premier Card",
+    "issuer":"Citibank",
+    "annual_fee":"$95",
+    "rewards":[
+      "10x Points per $1 spent on Hotels, Car Rentals, and Attractions booked on CitiTravel.com.",
+      "3x Points per $1 on Air Travel.",
+      "3x Points per $1 on Hotels.",
+      "3x Points per $1 spent at Supermarkets.",
+      "3x Points per $1 spent at Gas Stations.",
+      "3x Points per $1 spent at Restaurants.",
+      "1x Point per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        10.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Atmos Rewards Ascent Visa Signature credit card",
+    "issuer":"Bank of America",
+    "annual_fee":"$95",
+    "rewards":[
+      "3x Points for every $1 spent on eligible Alaska Airlines and Hawaiian Airlines purchases",
+      "2x Points for every $1 spent on eligible gas and EV charging station purchases.",
+      "2x Points for every $1 spent on eligible cable and streaming service purchases.",
+      "2x Points for every $1 spent on local transit (including ride share) purchases.",
+      "1x Point per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Preferred Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0 intro annual fee for the first year, then $95.",
+    "rewards":[
+      "6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).",
+      "6% Cash Back on select U.S. streaming subscriptions.",
+      "3% Cash Back at U.S. gas stations and on transit (including taxis\/rideshare, parking, tolls, trains, buses and more).",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Active Cash Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Unlimited Cash rewards on purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Hilton Honors American Express Surpass Card",
+    "issuer":"American Express",
+    "annual_fee":"$150",
+    "rewards":[
+      "12x Points for each dollar of eligible purchases charged on your Card directly with hotels and resorts within the Hilton portfolio.",
+      "6x Points for each dollar of eligible purchases on your Card at U.S. restaurants.",
+      "6x Points for each dollar of eligible purchases on your Card at U.S. supermarkets.",
+      "6x Points for each dollar of eligible purchases on your Card at U.S. gas stations.",
+      "4x Points for each dollar of eligible purchases on your Card at U.S. Online Retail Purchases.",
+      "3x Points for all other eligible purchases on your Card."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        12.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        6.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"World of Hyatt Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "9x Points total for Hyatt stays \u2013 4 Bonus Points per $1 spent on qualified purchases at Hyatt hotels & up to 5 Base Points per $1 from Hyatt as a World of Hyatt member.",
+      "2x Points per $1 spent at restaurants, on airlines tickets purchased directly from the airlines, on local transit and commuting and on fitness club and gym memberships.",
+      "1x Point spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        9.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Delta SkyMiles Platinum American Express Card",
+    "issuer":"American Express",
+    "annual_fee":"$350",
+    "rewards":[
+      "3x Miles on Delta purchases.",
+      "3x Miles on purchases made directly with hotels.",
+      "2x Miles at restaurants worldwide including takeout and delivery in the U.S.",
+      "2x Miles at U.S. supermarkets.",
+      "1x Mile on all other eligible purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":350,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Marriott Bonvoy Boundless Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "17x Up to 17x total points for every $1 spent at thousands of hotels participating in Marriott Bonvoy\u00ae.",
+      "3x Points per $1 on the first $6,000 spent in combined purchases annually on grocery stores, gas stations, and dining.",
+      "2x Points for every $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        17.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi \/ AAdvantage Platinum Select World Elite Mastercard",
+    "issuer":"Citibank",
+    "annual_fee":"$99, waived for the first 12 months",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":99,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Discover it Cash Back",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Southwest Rapid Rewards Priority Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$229",
+    "rewards":[
+      "4x Points on Southwest Airlines\u00ae purchases.",
+      "2x Points at gas stations and restaurants.",
+      "1x Points on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":229,
+    "clean_rewards":[
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"United\u2120 Explorer Card",
+    "issuer":"Chase",
+    "annual_fee":"$0 intro for the first year, then $150",
+    "rewards":[
+      "2x Miles on United\u00ae purchases",
+      "2x Miles per $1 spent on dining.",
+      "2x Miles per $1 spent on hotel stays when booked with the hotel.",
+      "1x Mile per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Other"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Autograph Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+      "3x Unlimited Points on restaurants, travel, gas stations, transit, popular streaming services and phone plans.",
+      "1x Unlimited Points on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"IHG One Rewards Premier Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$99",
+    "rewards":[
+      "26x Up to 26 total points per $1 spent when you stay at IHG Hotels & Resorts.",
+      "5x Points per $1 spent on purchases on travel.",
+      "5x Points per $1 spent on purchases at gas stations.",
+      "5x Points per $1 spent on purchases at restaurants.",
+      "3x Points per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":99,
+    "clean_rewards":[
+      [
+        26.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Simplicity Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Discover it Cash Back - 18 Month Intro Balance Transfer Offer",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Double Cash Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back on every purchase with unlimited 1% cash back when you buy, plus an additional 1% as you pay for those purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"U.S. Bank Shield Visa Card",
+    "issuer":"U.S. Bank",
+    "annual_fee":"$0",
+    "rewards":[
+      "4% Cash back on prepaid air, hotel and car reservations booked directly in the Travel Center."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Diamond Preferred Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Chase Freedom Flex",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on up to $1,500 in combined purchases in bonus categories each quarter you activate.",
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on dining.",
+      "3% Cash back at drugstores.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Reflect Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Discover it Chrome",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back at Gas Stations on up to $1,000 in combined purchases each quarter, automatically.",
+      "2% Cash back at Restaurants on up to $1,000 in combined purchases each quarter, automatically.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Navy Federal Credit Union Platinum Credit Card",
+    "issuer":"Navy Federal Credit Union",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Chase Sapphire Preferred Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Points on travel purchased through Chase Travel\u2120.",
+      "3x Points on dining.",
+      "3x Points on select streaming services.",
+      "3x Points on online groceries.",
+      "2x Points on all other travel purchases.",
+      "1x Point on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Retail & Entertainment"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"American Express Gold Card",
+    "issuer":"American Express",
+    "annual_fee":"$325",
+    "rewards":[
+      "4x Points when you dine at restaurants worldwide.",
+      "4x Points at U.S. supermarkets (on up to $25,000 per year in purchases, then 1X).",
+      "4x Points for Uber Eats purchases made at restaurants or U.S. supermarkets (after using your $120 in Uber Cash)",
+      "3x Points on flights booked directly with airlines or on amextravel.com.",
+      "1x Point on all other eligible purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":325,
+    "clean_rewards":[
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"American Express Platinum Card",
+    "issuer":"American Express",
+    "annual_fee":"$895",
+    "rewards":[
+      "5x Membership Rewards\u00ae Points on flights purchased directly from airlines or through American Express Travel\u00ae on up to $500,000 on these purchases per calendar year.",
+      "5x Membership Rewards\u00ae Points on prepaid hotel bookings through American Express Travel\u00ae, including Fine Hotels + Resorts\u00ae and The Hotel Collection bookings.",
+      "1x Membership Rewards\u00ae Points on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":895,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "membership rewards points",
+        "Travel"
+      ],
+      [
+        5.0,
+        "Multiplier",
+        "membership rewards points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "membership rewards points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Strata Premier Card",
+    "issuer":"Citibank",
+    "annual_fee":"$95",
+    "rewards":[
+      "10x Points per $1 spent on Hotels, Car Rentals, and Attractions booked on CitiTravel.com.",
+      "3x Points per $1 on Air Travel.",
+      "3x Points per $1 on Hotels.",
+      "3x Points per $1 spent at Supermarkets.",
+      "3x Points per $1 spent at Gas Stations.",
+      "3x Points per $1 spent at Restaurants.",
+      "1x Point per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        10.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Sapphire Reserve",
+    "issuer":"Chase",
+    "annual_fee":"$795",
+    "rewards":[
+      "8x Points on all purchases through Chase Travel\u2120, including The Edit\u2120.",
+      "4x Points on flights and hotels booked direct.",
+      "3x Points on dining worldwide.",
+      "1x Points on all other purchases."
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":795,
+    "clean_rewards":[
+      [
+        8.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Strata Elite\u2120 Card",
+    "issuer":"Citibank",
+    "annual_fee":"$595",
+    "rewards":[
+      "12x Points per $1 spent on Hotels, Car Rentals, and Attractions booked on cititravel.com.",
+      "6x Points per $1 spent on Air Travel booked on cititravel.com.",
+      "6x Points per $1 spent at Restaurants on CitiNights\u2120 purchases, every Friday and Saturday from 6 PM to 6 AM ET.",
+      "3x Points per $1 spent at Restaurants any other time.",
+      "1.5x Points per $1 spent on All Other Purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":595,
+    "clean_rewards":[
+      [
+        12.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        6.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        6.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Autograph Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+      "3x Unlimited Points on restaurants, travel, gas stations, transit, popular streaming services and phone plans.",
+      "1x Unlimited Points on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"United\u2120 Explorer Card",
+    "issuer":"Chase",
+    "annual_fee":"$0 intro for the first year, then $150",
+    "rewards":[
+      "2x Miles on United\u00ae purchases",
+      "2x Miles per $1 spent on dining.",
+      "2x Miles per $1 spent on hotel stays when booked with the hotel.",
+      "1x Mile per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Other"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Marriott Bonvoy Boundless Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "17x Up to 17x total points for every $1 spent at thousands of hotels participating in Marriott Bonvoy\u00ae.",
+      "3x Points per $1 on the first $6,000 spent in combined purchases annually on grocery stores, gas stations, and dining.",
+      "2x Points for every $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        17.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Autograph Journey\u2120 Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Unlimited Points on hotels.",
+      "4x Unlimited Points on airlines.",
+      "3x Unlimited Points on other travel and restaurants.",
+      "1x Unlimited Points on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"PenFed Pathfinder Rewards Visa Signature Card",
+    "issuer":"PenFed Pathfinder",
+    "annual_fee":"$95",
+    "rewards":[
+      "4x Points on travel for PenFed Honors Advantage Members.",
+      "3x Points on travel categories for everyone else.",
+      "1.5x Points on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.5,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Double Cash Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back on every purchase with unlimited 1% cash back when you buy, plus an additional 1% as you pay for those purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Bank of America Customized Cash Rewards credit card",
+    "issuer":"Bank of America",
+    "annual_fee":"$0",
+    "rewards":[
+      "6% Cash back for the first year in the category of your choice (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "3% Cash back in the category of your choice after the first year (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "2% Cash back at grocery stores and wholesale clubs (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Active Cash Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Unlimited Cash rewards on purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Everyday Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0",
+    "rewards":[
+      "3% Cash back at U.S. supermarkets (up to $6,000 per year in purchases, then 1%).",
+      "3% Cash Back on U.S. online retail purchases (up to $6,000 per year, then 1%).",
+      "3% Cash Back at U.S. gas stations (up to $6,000 per year, then 1%). ",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Preferred Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0 intro annual fee for the first year, then $95.",
+    "rewards":[
+      "6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).",
+      "6% Cash Back on select U.S. streaming subscriptions.",
+      "3% Cash Back at U.S. gas stations and on transit (including taxis\/rideshare, parking, tolls, trains, buses and more).",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Cash Back",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Flex",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on up to $1,500 in combined purchases in bonus categories each quarter you activate.",
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on dining.",
+      "3% Cash back at drugstores.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Apple Card",
+    "issuer":"Apple",
+    "annual_fee":"No Fees*",
+    "rewards":[
+      "3% Daily Cash back on anything you buy from Apple and at select merchants like Nike, Uber, Walgreens, and more when you use Apple Card with Apple Pay. Merchant offers may change at any time.",
+      "2% Daily Cash back when you use Apple Card with Apple Pay.",
+      "1% Daily Cash back when you use the titanium card in stores or your virtual card number online."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Other"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Other"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "Other"
+      ]
+    ]
+  },
+  {
+    "name":"PayPal Cashback Mastercard",
+    "issuer":"PayPal Cashback Mastercard",
+    "annual_fee":"$0",
+    "rewards":[
+      "3% Cash back when you check out with PayPal.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Other"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Synchrony Premier World Mastercard",
+    "issuer":"Synchrony Premier World Mastercard",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back on every purchase."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Flex",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on up to $1,500 in combined purchases in bonus categories each quarter you activate.",
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on dining.",
+      "3% Cash back at drugstores.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Cash Back",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Reflect Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Blue Cash Everyday Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0",
+    "rewards":[
+      "3% Cash back at U.S. supermarkets (up to $6,000 per year in purchases, then 1%).",
+      "3% Cash Back on U.S. online retail purchases (up to $6,000 per year, then 1%).",
+      "3% Cash Back at U.S. gas stations (up to $6,000 per year, then 1%). ",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Bank of America Unlimited Cash Rewards credit card",
+    "issuer":"Bank of America",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back on purchases for the first year from account opening.",
+      "1.5% Cash back on all purchases after the first year from account opening."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"U.S. Bank Shield Visa Card",
+    "issuer":"U.S. Bank",
+    "annual_fee":"$0",
+    "rewards":[
+      "4% Cash back on prepaid air, hotel and car reservations booked directly in the Travel Center."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ]
+    ]
+  },
+  {
+    "name":"Bank of America Customized Cash Rewards credit card",
+    "issuer":"Bank of America",
+    "annual_fee":"$0",
+    "rewards":[
+      "6% Cash back for the first year in the category of your choice (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "3% Cash back in the category of your choice after the first year (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "2% Cash back at grocery stores and wholesale clubs (up to $2,500 in combined choice category\/grocery store\/wholesale club quarterly purchases).",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Sapphire Preferred Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Points on travel purchased through Chase Travel\u2120.",
+      "3x Points on dining.",
+      "3x Points on select streaming services.",
+      "3x Points on online groceries.",
+      "2x Points on all other travel purchases.",
+      "1x Point on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Retail & Entertainment"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Active Cash Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Unlimited Cash rewards on purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Preferred Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0 intro annual fee for the first year, then $95.",
+    "rewards":[
+      "6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).",
+      "6% Cash Back on select U.S. streaming subscriptions.",
+      "3% Cash Back at U.S. gas stations and on transit (including taxis\/rideshare, parking, tolls, trains, buses and more).",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Double Cash Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back on every purchase with unlimited 1% cash back when you buy, plus an additional 1% as you pay for those purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Unlimited",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on drugstore purchases.",
+      "3% Cash back on dining at restaurants, including takeout and eligible delivery services.",
+      "1.5% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Student Chrome",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back at Gas stations on up to $1,000 in combined purchases each quarter, automatically.",
+      "2% Cash back at Restaurants on up to $1,000 in combined purchases each quarter, automatically.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"United\u2120 Explorer Card",
+    "issuer":"Chase",
+    "annual_fee":"$0 intro for the first year, then $150",
+    "rewards":[
+      "2x Miles on United\u00ae purchases",
+      "2x Miles per $1 spent on dining.",
+      "2x Miles per $1 spent on hotel stays when booked with the hotel.",
+      "1x Mile per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Other"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Flex",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on up to $1,500 in combined purchases in bonus categories each quarter you activate.",
+      "5% Cash back on travel purchased through Chase Travel\u2120.",
+      "3% Cash back on dining.",
+      "3% Cash back at drugstores.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Cash Back",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Marriott Bonvoy Boundless Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "17x Up to 17x total points for every $1 spent at thousands of hotels participating in Marriott Bonvoy\u00ae.",
+      "3x Points per $1 on the first $6,000 spent in combined purchases annually on grocery stores, gas stations, and dining.",
+      "2x Points for every $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        17.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Sapphire Preferred Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Points on travel purchased through Chase Travel\u2120.",
+      "3x Points on dining.",
+      "3x Points on select streaming services.",
+      "3x Points on online groceries.",
+      "2x Points on all other travel purchases.",
+      "1x Point on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Retail & Entertainment"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Atmos Rewards Ascent Visa Signature credit card",
+    "issuer":"Bank of America",
+    "annual_fee":"$95",
+    "rewards":[
+      "3x Points for every $1 spent on eligible Alaska Airlines and Hawaiian Airlines purchases",
+      "2x Points for every $1 spent on eligible gas and EV charging station purchases.",
+      "2x Points for every $1 spent on eligible cable and streaming service purchases.",
+      "2x Points for every $1 spent on local transit (including ride share) purchases.",
+      "1x Point per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi \/ AAdvantage Platinum Select World Elite Mastercard",
+    "issuer":"Citibank",
+    "annual_fee":"$99, waived for the first 12 months",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":99,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"American Airlines AAdvantage MileUp",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Delta SkyMiles Gold American Express Card",
+    "issuer":"American Express",
+    "annual_fee":"$0 intro for the first year, then $150",
+    "rewards":[
+      "2x Miles on Delta purchases.",
+      "2x Miles at U.S. Supermarkets.",
+      "2x Miles at restaurants worldwide, including takeout and delivery in the U.S.",
+      "1x Mile on all other eligible purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"United\u2120 Explorer Card",
+    "issuer":"Chase",
+    "annual_fee":"$0 intro for the first year, then $150",
+    "rewards":[
+      "2x Miles on United\u00ae purchases",
+      "2x Miles per $1 spent on dining.",
+      "2x Miles per $1 spent on hotel stays when booked with the hotel.",
+      "1x Mile per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Other"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Wells Fargo Autograph Journey\u2120 Card",
+    "issuer":"Wells Fargo",
+    "annual_fee":"$95",
+    "rewards":[
+      "5x Unlimited Points on hotels.",
+      "4x Unlimited Points on airlines.",
+      "3x Unlimited Points on other travel and restaurants.",
+      "1x Unlimited Points on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        5.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Delta SkyMiles Reserve American Express Card",
+    "issuer":"American Express",
+    "annual_fee":"$650",
+    "rewards":[
+      "3x Miles on Delta purchases.",
+      "1x Mile on all other eligible purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":650,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Southwest Rapid Rewards Priority Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$229",
+    "rewards":[
+      "4x Points on Southwest Airlines\u00ae purchases.",
+      "2x Points at gas stations and restaurants.",
+      "1x Points on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":229,
+    "clean_rewards":[
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Aeroplan Credit Card",
+    "issuer":"Chase",
+    "annual_fee":"$95",
+    "rewards":[
+      "3x Points for each dollar spent at grocery stores.",
+      "3x Points for each dollar spent on dining at restaurants.",
+      "3x Points on Air Canada directly.",
+      "1x Point for each dollar spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Other"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"JetBlue Plus Card",
+    "issuer":"JetBlue Plus Card",
+    "annual_fee":"$99",
+    "rewards":[
+      "6x Points on eligible JetBlue purchases.",
+      "2x Points at restaurants.",
+      "2x Points at eligible grocery stores.",
+      "1x Point on all other purchases."
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":99,
+    "clean_rewards":[
+      [
+        6.0,
+        "Multiplier",
+        "points",
+        "Other"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Student Cash Back",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash back on everyday purchases at different places you shop each quarter like grocery stores, restaurants, gas stations, and more, up to the quarterly maximum when you activate.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Chase Freedom Rise",
+    "issuer":"Chase",
+    "annual_fee":"$0",
+    "rewards":[
+      "1.5% Cash back on all purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Bank of America Travel Rewards credit card for Students",
+    "issuer":"Bank of America",
+    "annual_fee":"$0",
+    "rewards":[
+      "3x Points per $1 spent on travel purchases booked through the Bank of America Travel Center.",
+      "1.5x Points per $1 spent on all purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.5,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Student Chrome",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back at Gas stations on up to $1,000 in combined purchases each quarter, automatically.",
+      "2% Cash back at Restaurants on up to $1,000 in combined purchases each quarter, automatically.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Discover it Secured Credit Card",
+    "issuer":"Discover",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back at Gas stations on up to $1,000 in combined purchases each quarter, automatically.",
+      "2% Cash back at Restaurants on up to $1,000 in combined purchases each quarter, automatically.",
+      "1% Cash back on all other purchases."
+    ],
+    "score":"Poor",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"The secured Self Visa Credit Card",
+    "issuer":"Self",
+    "annual_fee":"$0 intro first year, $25 thereafter",
+    "rewards":[
+
+    ],
+    "score":"Poor",
+    "clean_annual_fee":25,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Firstcard Secured Credit Builder Card",
+    "issuer":"Firstcard",
+    "annual_fee":"$72-$144\/year, depending on subscription plan",
+    "rewards":[
+      "15% Merchant Cashback at 29,000 partner merchants.",
+      "10% Random Cashback on all qualifying purchases.",
+      "1% Unlimited Cashback with Firstcard Premium on all purchases on top of the two cashback offerings (Merchant Cashback and Random Cashback) all Firstcard members are currently enjoying."
+    ],
+    "score":"Poor",
+    "clean_annual_fee":72,
+    "clean_rewards":[
+      [
+        15.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        10.0,
+        "Percentage",
+        "cash back",
+        "Other"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Preferred Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0 intro annual fee for the first year, then $95.",
+    "rewards":[
+      "6% Cash Back at U.S. supermarkets on up to $6,000 per year in purchases (then 1%).",
+      "6% Cash Back on select U.S. streaming subscriptions.",
+      "3% Cash Back at U.S. gas stations and on transit (including taxis\/rideshare, parking, tolls, trains, buses and more).",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        6.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Prime Visa",
+    "issuer":"Amazon.com",
+    "annual_fee":"$0",
+    "rewards":[
+      "5% Cash Back at Amazon.com, Amazon Fresh, Whole Foods Market, and on Chase Travel purchases with an eligible Prime membership. ",
+      "2% Cash back at gas stations, restaurants, and on local transit and commuting (including rideshare).",
+      "1% Cash Back on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Blue Cash Everyday Card from American Express",
+    "issuer":"American Express",
+    "annual_fee":"$0",
+    "rewards":[
+      "3% Cash back at U.S. supermarkets (up to $6,000 per year in purchases, then 1%).",
+      "3% Cash Back on U.S. online retail purchases (up to $6,000 per year, then 1%).",
+      "3% Cash Back at U.S. gas stations (up to $6,000 per year, then 1%). ",
+      "1% Cash Back on other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Retail & Entertainment"
+      ],
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Gas & Utilities"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Double Cash Card",
+    "issuer":"Citibank",
+    "annual_fee":"$0",
+    "rewards":[
+      "2% Cash back on every purchase with unlimited 1% cash back when you buy, plus an additional 1% as you pay for those purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"American Express Gold Card",
+    "issuer":"American Express",
+    "annual_fee":"$325",
+    "rewards":[
+      "4x Points when you dine at restaurants worldwide.",
+      "4x Points at U.S. supermarkets (on up to $25,000 per year in purchases, then 1X).",
+      "4x Points for Uber Eats purchases made at restaurants or U.S. supermarkets (after using your $120 in Uber Cash)",
+      "3x Points on flights booked directly with airlines or on amextravel.com.",
+      "1x Point on all other eligible purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":325,
+    "clean_rewards":[
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        4.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Citi Strata Premier Card",
+    "issuer":"Citibank",
+    "annual_fee":"$95",
+    "rewards":[
+      "10x Points per $1 spent on Hotels, Car Rentals, and Attractions booked on CitiTravel.com.",
+      "3x Points per $1 on Air Travel.",
+      "3x Points per $1 on Hotels.",
+      "3x Points per $1 spent at Supermarkets.",
+      "3x Points per $1 spent at Gas Stations.",
+      "3x Points per $1 spent at Restaurants.",
+      "1x Point per $1 spent on all other purchases."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        10.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Travel"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Gas & Utilities"
+      ],
+      [
+        3.0,
+        "Multiplier",
+        "points",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Multiplier",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Platinum Mastercard",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Get the credit you need with no annual fee."
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"Venture X Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$395",
+    "rewards":[
+      "Earn unlimited 10X miles on hotels and rental cars booked through Capital One Travel and 5X miles on flights and vacation rentals booked through Capital One Travel, plus unlimited 2X miles on all other purchases"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":395,
+    "clean_rewards":[
+      [
+        10.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        5.0,
+        "Multiplier",
+        "miles",
+        "Travel"
+      ],
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Venture Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$95",
+    "rewards":[
+      "Earn unlimited 2 miles per dollar on every purchase",
+      "Earn unlimited 5 miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        2.0,
+        "Per Unit",
+        "miles",
+        "All Purchases"
+      ],
+      [
+        5.0,
+        "Per Unit",
+        "miles",
+        "Travel"
+      ]
+    ]
+  },
+  {
+    "name":"VentureOne Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 1.25 miles per dollar on every purchase",
+      "Earn unlimited 5 miles per dollar on hotels, vacation rentals and rental cars booked through Capital One Travel"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.25,
+        "Per Unit",
+        "miles",
+        "All Purchases"
+      ],
+      [
+        5.0,
+        "Per Unit",
+        "miles",
+        "Travel"
+      ]
+    ]
+  },
+  {
+    "name":"VentureOne Rewards for Good Credit",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 1.25 miles per dollar on every purchase, every day"
+    ],
+    "score":"Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.25,
+        "Per Unit",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Quicksilver Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 1.5% cash back on every purchase, every day"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Quicksilver Rewards for Good Credit",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 1.5% cash back on every purchase, every day"
+    ],
+    "score":"Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Savor Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases",
+      "\n4"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Savor Rewards for Good Credit",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases.\u00a0\n4"
+    ],
+    "score":"Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"SavorOne Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$39",
+    "rewards":[
+      "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases.\n4"
+    ],
+    "score":"Fair",
+    "clean_annual_fee":39,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"QuicksilverOne Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$39",
+    "rewards":[
+      "Earn unlimited 1.5% cash back on every purchase, every day"
+    ],
+    "score":"Fair",
+    "clean_annual_fee":39,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Savor Rewards for Students",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 3% cash back at grocery stores, on dining, entertainment and popular streaming services, plus 1% cash back on all other purchases.\n4"
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Quicksilver Rewards for Students",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn unlimited 1.5% cash back on every purchase, every day."
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Quicksilver Secured Rewards",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 1.5% cash back on every purchase with a refundable $200 minimum deposit."
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ],
+      [
+        200.0,
+        "Flat Amount",
+        "minimum deposit",
+        "Other"
+      ]
+    ]
+  },
+  {
+    "name":"Platinum Secured",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Refundable deposit of $49, $99 or $200 gets you at least a $200 initial credit line.\n\nWith responsible use, you can earn your deposit back and upgrade your card."
+    ],
+    "score":"Poor",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"T-Mobile Visa",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 2% in rewards on every purchase and 5% in rewards on any phone, device or accessory at T-Mobile to be redeemed towards a new phone, device or your T-Mobile bill.\n8"
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ],
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Retail & Entertainment"
+      ]
+    ]
+  },
+  {
+    "name":"Kohl's Rewards Visa",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn Kohl\u00e2\u0080\u0099s  everywhere Visa is accepted and enjoy exclusive cardholder discounts and a special anniversary offer every year."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+
+    ]
+  },
+  {
+    "name":"REI Co-op Mastercard",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 5% back in rewards on REI purchases, plus 1.5% back on all other purchases",
+      "Redeem rewards on purchases at REI retail stores and REI.com."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Retail & Entertainment"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Pottery Barn Key Rewards Visa",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+      "Earn 4% back on grocery stores, dining & food delivery",
+      "Earn 1% back in rewards on everything else."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Retail & Entertainment"
+      ],
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Williams Sonoma Key Rewards Visa",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+      "Earn 4% back on grocery stores, dining & food delivery",
+      "Earn 1% back in rewards on everything else."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Retail & Entertainment"
+      ],
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"West Elm Key Rewards Visa",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+      "Earn 4% back on grocery stores, dining & food delivery",
+      "Earn 1% back in rewards on everything else."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Retail & Entertainment"
+      ],
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"The Key Rewards Visa",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 5% back in rewards across eight of Williams-Sonoma, Inc.\u00e2\u0080\u0099s brands, including Pottery Barn, Williams Sonoma, and West Elm",
+      "Earn 4% back on grocery stores, dining & food delivery",
+      "Earn 1% back in rewards on everything else."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Retail & Entertainment"
+      ],
+      [
+        4.0,
+        "Percentage",
+        "cash back",
+        "Groceries & Dining"
+      ],
+      [
+        1.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Spark 2% Cash Plus",
+    "issuer":"Capital One",
+    "annual_fee":"$150",
+    "rewards":[
+      "Unlimited 2% cash back with spend capacity that adapts to your business"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":150,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Spark 2% Cash",
+    "issuer":"Capital One",
+    "annual_fee":"$0 intro for the first year, $95 after that",
+    "rewards":[
+      "Unlimited 2% cash back on every purchase, every day"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Spark 1.5% Cash Select",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Unlimited 1.5% cash back on every purchase, every day"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Spark 1% Classic",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Get the credit you want for your business, and unlimited 1% cash back on every purchase, every day"
+    ],
+    "score":"Fair",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.0,
+        "Percentage",
+        "cash back",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Venture X Business",
+    "issuer":"Capital One",
+    "annual_fee":"$395",
+    "rewards":[
+      "Unlimited\u00a02X miles with spend capacity that adapts to your business"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":395,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Spark 2X Miles",
+    "issuer":"Capital One",
+    "annual_fee":"$0 intro for the first year, $95 after that",
+    "rewards":[
+      "Unlimited 2X miles per dollar on every purchase, every day"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":95,
+    "clean_rewards":[
+      [
+        2.0,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Spark 1.5X Miles Select",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Unlimited 1.5X miles per dollar on every purchase, every day"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Multiplier",
+        "miles",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Cabelas CLUB Card",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Get 1% back in CLUB Points on other purchases, anywhere Mastercard is accepted"
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.0,
+        "Percentage",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"Bass Pro Shops  CLUB Card",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Get 2% back in CLUB Points on all Bass Pro Shops and Cabela\u00e2\u0080\u0099s purchases"
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        2.0,
+        "Percentage",
+        "points",
+        "Retail & Entertainment"
+      ]
+    ]
+  },
+  {
+    "name":"Bass Pro Shops and Cabela's CLUB Business card",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Get 1.5% back in CLUB Points on purchases, anywhere Mastercard is accepted"
+    ],
+    "score":"Excellent",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        1.5,
+        "Percentage",
+        "points",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"BJs One Mastercard",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 3% back in rewards on most purchases at BJ\u00e2\u0080\u0099s",
+      "1.5% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
+      "10\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
+      "Your rewards never expire",
+      "Redeem your rewards in-club, on BJs.com or in the BJ\u00e2\u0080\u0099s app."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        3.0,
+        "Percentage",
+        "rewards",
+        "Other"
+      ],
+      [
+        1.5,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  },
+  {
+    "name":"BJs One+ Mastercard",
+    "issuer":"Capital One",
+    "annual_fee":"$0",
+    "rewards":[
+      "Earn 5% back in rewards on most purchases at BJ\u00e2\u0080\u0099s",
+      "2% back in rewards on purchases everywhere else Mastercard\u00c2\u00ae is accepted",
+      "15\u00c2\u00a2 off\/gallon at BJ\u00e2\u0080\u0099s Gas\u00c2\u00ae",
+      "Your rewards never expire",
+      "Redeem your rewards in-club, on BJs.com or in the BJ\u00e2\u0080\u0099s app."
+    ],
+    "score":"Very Good",
+    "clean_annual_fee":0,
+    "clean_rewards":[
+      [
+        5.0,
+        "Percentage",
+        "rewards",
+        "Other"
+      ],
+      [
+        2.0,
+        "Percentage",
+        "rewards",
+        "All Purchases"
+      ]
+    ]
+  }
+]

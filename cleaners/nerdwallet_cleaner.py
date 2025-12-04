@@ -110,5 +110,7 @@ def clean_annual_fee(s):
         return int(nums[0])
     elif "intro" in s:
         return int(nums[1])
+    elif len(nums) == 0:
+        return 0
     else:
         return int(nums[0])

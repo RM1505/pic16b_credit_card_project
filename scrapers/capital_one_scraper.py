@@ -38,12 +38,14 @@ def scrape_capital_one(score = False, clean = False):
         if score:
             credit_score = card.select("button.credit-level-button")[0].text
             credit_score = re.sub(" Credit", "", credit_score)
-
-            for k in score_conversion.keys():
-                if credit_score == k:
-                    credit_score = score_conversion[k]
-            #credit_score = credit_score.split("-")[0]
+            credit_score = credit_score.strip()               
+            credit_score = credit_score.replace("\xa0", "")   
+            credit_score = credit_score.replace("–", "-")     
+            credit_score = credit_score.title()               
+            credit_score = score_conversion.get(credit_score, credit_score)
+            
             cards["score"].append(credit_score)
+
         
         cards["issuer"].append("Capital One")
 

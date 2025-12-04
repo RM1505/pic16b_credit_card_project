@@ -1,5 +1,8 @@
 from nicegui import ui
 import json
+import import_ipynb
+from solver import get_dicts, optimize_cardspace
+import pandas as pd
 
 def load_cards(path: str = "clean_cards.json"):
 	with open(path, "r", encoding="utf-8") as f:
@@ -35,41 +38,68 @@ with ui.row().classes("w-full justify-center mt-8 mb-4"):
     ui.label("We help you choose the best credit card for you.") \
         .classes("text-3xl font-bold text-green-500")
 
-questions = [
-    "Monthly travel spending",
-    "Monthly dining spending",
-    "Monthly entertainment spending",
-    "Monthly groceries spending",
-    "Monthly transit spending",
-    "Monthly spending (other categories)",
+category_keys = [
+    "Travel",
+    "Groceries & Dining",
+    "Gas & Utilities",
+    "Retail & Entertainment",
+    "All Purchases"
 ]
 
-def annual_spend(values):
-    return sum(values) * 12
+questions = [f"Monthly spend on {cat}" for cat in category_keys]
+
+df= pd.read_json("cards_w_score.json")
 
 
 with ui.card().classes("w-1/2 mx-auto mt-10 p-6"):
     ui.label("Tell us about your spending habits:").classes("text-2xl font-bold mb-4")
 
-    inputs = []
-    with ui.column().classes("gap-3"):
-        for q in questions:
-            with ui.row().classes("items-center gap-4"):
-                ui.label(q + ":").classes("w-56")
-                num = ui.number(min=0, format='%.2f').classes("w-40")
-                inputs.append(num)
+    inputs = {
+        "Travel": 0,
+        "Groceries & Dining": 0,
+        "Gas & Utilities": 0,
+        "Retail & Entertainment": 0,
+        "All Purchases": 0
+    }
 
-    result_label = ui.label("").classes("text-xl font-medium mt-5 text-green-600")
+    with ui.column().classes("gap-3"):
+        for i in range(len(questions)):
+            with ui.row().classes("items-center gap-4"):
+                ui.label(questions[i] + ":").classes("w-56")
+                num = ui.number(min=0, format='%.2f').classes("w-40")
+                inputs[category_keys[i]] = num
+        ui.label("Which best describes your credit score?")
+        dropdown = ui.select(
+            options=["Excellent", "Very Good", "Good", "Fair", "Poor"],
+            value=None,                
+            with_input=False           
+        )
+
+    result_html = ui.html("", sanitize=None).classes("text-xl font-medium mt-5 text-green-600")
 
     def submit():
         try:
-            values = [float(i.value or 0) for i in inputs]
+            solver_inputs = {}
+            for key, element in inputs.items():
+                solver_inputs[key] = float(element.value or 0.0)
         except ValueError:
             ui.notify("Please enter valid numbers.", color="red")
             return
         
-        total = annual_spend(values)
-        result_label.set_text(f"Your estimated annual spending: ${total:,.2f}")
+        realistic_cards = df[df["score"] == dropdown.value]
+        dict_cards, fees= get_dicts(realistic_cards)
+
+        chosen, total, held, breakdown = optimize_cardspace(dict_cards, fees, solver_inputs, 800)
+        #result_label.set_text(f"Your estimated annual spending: ${chosen:,.2f}")
+        output_lines = [f"Your optimal wallet is:"]
+        elements_used = []
+        for key, element in chosen.items():
+            if element not in elements_used:
+                elements_used.append(element)
+                output_lines.append(f"• {element} ")
+        output_lines.append(f"Estimated annual rewards: ${total:,.2f}")
+        html_content = "<br>".join(output_lines)
+        result_html.set_content(html_content)
 
     ui.button("Calculate Annual Spending", on_click=submit).classes("mt-4")
 
