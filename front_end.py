@@ -21,7 +21,7 @@ cards_dialog = ui.dialog()
 with cards_dialog:
     with ui.card().classes("w-2/3 mx-auto p-6 mt-4"):
         ui.label("All Credit Cards").classes(
-            "text-3xl font-bold text-blue-600 mb-4 text-center"
+            "text-3xl font-bold text-emerald-400 mb-4 text-center"
         )
         ui.label(f"Total cards found: {len(cards)}").classes(
             "text-lg font-medium mb-4"
@@ -76,9 +76,18 @@ with ui.column().classes(
             "We help choose the best credit card for you. Turn your spending into maximum rewards.").classes(
             "text-3xl font-bold text-green-500"
         )
+		        ui.label("How it works:").classes(
+                    "text-2xl font-semibold text-emerald-400"
+        )
+        ui.markdown("""
+            • We take your monthly spending and estimate yearly totals.<br>
+            • We filter cards by your credit score range.<br>
+            • Our solver picks the combination of cards that maximizes your estimated rewards, subject to constraints.<br>
+            """
+        ).classes("text-2xl font-semibold text-emerald-400")
 
         with ui.row().classes("mt-4 gap-3"):
-            ui.button("View All Credit Cards", on_click=cards_dialog.open).classes(
+            ui.button("Browse Credit Cards", on_click=cards_dialog.open).classes(
                 "bg-emerald-500 hover:bg-emerald-600 text-white font-semibold "
                 "px-4 py-2 rounded-full text-sm md:text-base shadow-lg shadow-emerald-900/50"
             )
