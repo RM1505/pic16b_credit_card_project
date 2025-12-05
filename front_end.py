@@ -63,28 +63,28 @@ with cards_dialog:
         )
 
 with ui.column().classes(
-    "min-h-screen w-full items-center bg-white text-black"
+    "min-h-screen w-full items-center bg-black text-black"
 ):
 
     ui.space()
 
     with ui.column().classes("items-center text-center px-4"):
         ui.label("Welcome to your Credit Card Optimizer!").classes(
-            "text-5xl font-extrabold text-emerald-400"
+            "text-6xl font-extrabold tracking-tight text-emerald-400 drop-shadow-lg mb-3"
         )
         ui.label(
             "We help choose the best credit card for you. Turn your spending into maximum rewards.").classes(
-            "text-3xl font-bold text-green-500"
+            "text-3xl md:text-3xl font-semibold text-green-500 max-w-2xl leading-snug"
         )
 		        ui.label("How it works:").classes(
-                    "text-2xl font-semibold text-emerald-400"
+                    "mt-6 mb-2 text-3xl font-bold text-emerald-400 underline underline-offset-4"
         )
         ui.markdown("""
-            • We take your monthly spending and estimate yearly totals.<br>
-            • We filter cards by your credit score range.<br>
-            • Our solver picks the combination of cards that maximizes your estimated rewards, subject to constraints.<br>
+            1. We take your monthly spending and estimate yearly totals.<br>
+            2. We filter cards by your credit score range.<br>
+            3. Our solver picks the combination of cards that maximizes your estimated rewards, subject to constraints.<br>
             """
-        ).classes("text-2xl font-semibold text-emerald-400")
+        ).classes("text-2xl font-semibold text-green-300 font-medium max-w-2xl leading-relaxed text-left")
 
         with ui.row().classes("mt-4 gap-3"):
             ui.button("Browse Credit Cards", on_click=cards_dialog.open).classes(
