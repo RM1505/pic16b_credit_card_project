@@ -63,7 +63,7 @@ with cards_dialog:
         )
 
 with ui.column().classes(
-    "min-h-screen w-full items-center bg-black text-black"
+    "min-h-screen w-full items-center bg-white text-black"
 ):
 
     ui.space()
