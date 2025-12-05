@@ -10,6 +10,12 @@ def load_cards(path: str = "cards_w_score.json"):
 
 cards = load_cards()
 
+# Group cards by issuer for sleeeker display
+cards_by_issuer = {}
+for card in cards:
+    issuer = card.get("issuer")
+    cards_by_issuer.setdefault(issuer, []).append(card)
+
 cards_dialog = ui.dialog()
 
 with cards_dialog:
@@ -21,9 +27,30 @@ with cards_dialog:
             "text-lg font-medium mb-4"
         )
 
-        with ui.column().classes("gap-2 max-h-[500px] overflow-y-auto"):
-            for card in cards:
-                ui.label(f"• {card.get('name', 'Unnamed Card')}").classes("text-md")
+		with ui.column().classes("gap-3 max-h-[500px] overflow-y-auto w-full"):
+	            # Sort issuers alphabetically
+	            for issuer in sorted(cards_by_issuer.keys()):
+	                ui.label(issuer).classes("text-xl font-semibold mt-2 mb-1 text-left")
+	
+	                for card in cards_by_issuer[issuer]:
+	                    card_name = card.get("name", "Unnamed Card")
+	
+	                    # Expansion shows issuer and rewards bullets when clicked
+	                    with ui.expansion(card_name).classes("w-full"):
+	                        ui.label(f"Issuer: {issuer}").classes("font-medium mb-2")
+	
+	                        rewards = card.get("rewards") or card.get("clean_rewards")
+	
+	                        # Rewards as bullet points
+	                        ui.label("Rewards:").classes("font-medium mb-1")
+	
+	                        with ui.column().classes("pl-4 gap-1"):
+	                            if isinstance(rewards, list):
+	                                if rewards and isinstance(rewards[0], str):
+	                                    for r in rewards:
+	                                        ui.label(f"• {r}").classes("text-sm")
+	                                else:
+	                                    ui.label("• No rewards information available.").classes("text-sm italic")
 
         ui.button("Close", on_click=cards_dialog.close).classes(
             "mt-4 bg-gray-300 px-4 py-2 rounded-lg"
