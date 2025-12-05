@@ -76,7 +76,7 @@ with ui.column().classes(
             "We help choose the best credit card for you. Turn your spending into maximum rewards.").classes(
             "text-3xl md:text-3xl font-semibold text-green-500 max-w-2xl leading-snug"
         )
-		ui.label("How it works:").classes(
+        ui.label("How it works:").classes(
             "mt-6 mb-2 text-3xl font-bold text-emerald-400 underline underline-offset-4"
         )
         ui.markdown("""
