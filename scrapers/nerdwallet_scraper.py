@@ -21,8 +21,19 @@ score_conversion = {
 }
 
 
-def scrape_nerdwallet(clean = False, discluded_providers = [], score = False):
-    
+def scrape_nerdwallet(clean: bool = False, discluded_providers: list = [], score: bool = False)-> pd.DataFrame:
+    """
+    Gets credit card data from NerdWallet.
+
+    Args:
+        clean(bool): Whether to clean the data after scraping. Defaults to False.
+        discluded_providers(list): A list of card issuers to exclude from the results. Defaults to [].
+        score(bool): Whether to include credit score information. Defaults to False.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped credit card data.
+    """
+
     main_soup = link2soup("https://www.nerdwallet.com/credit-cards")
     
     hrefs = [

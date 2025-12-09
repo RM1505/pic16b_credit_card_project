@@ -35,6 +35,16 @@ FILTER_KEYWORDS = ["annual fee", "deposit", "credit line", "refundable", "initia
 FILTER_PATTERN = re.compile(r"|".join(FILTER_KEYWORDS))
 
 def clean_annual_fee(s):
+    """
+    Turns an annual fee string into an integer value.
+
+    Args:
+        s (str): The raw annual fee string.
+    
+    Returns:
+        int: The cleaned annual fee as an integer.
+    """
+
     nums = re.findall(r"\d+", s)
     if len(nums) == 1:
         return int(nums[0])
@@ -43,20 +53,49 @@ def clean_annual_fee(s):
     else:
         raise ValueError
 
-def detect_category(clause_lower):
+def detect_category(clause_lower: str) -> str:
+    """
+    Detects the reward category based on keywords in the clause.
+
+    Args:
+        clause_lower (str): The reward clause in lowercase.
+    
+    Returns:
+        str: The detected reward category.
+    """
     for cat, keywords in categories.items():
         if any(k.lower() in clause_lower for k in keywords):
             return cat
     return "Other"
 
-def normalize_unit(unit):
+def normalize_unit(unit: str) -> str:
+    """
+    Normalizes the unit string to a standard format.
+
+    Args:
+        unit (str): The unit string to normalize.
+    
+    Returns:
+        str: The normalized unit string.
+    """
+
     if unit in ["or"]:
         return "dollars"
     if unit in ["¢", "cent", "cents"]:
         return "cents off"
     return unit
 
-def clean_rate(s):
+def clean_rate(s: str) -> list[tuple]:
+    """
+    Cleans and parses a reward rate string into structured components.
+
+    Args:
+        s (str): The raw reward rate string.
+    
+    Returns:
+        list[tuple]: A list of tuples containing (value, rate_type, unit, category).
+    """
+
     pattern = r"(?<!\d\.)\b(?=\d+(?:\.\d+)?(?:X|%|\s+[a-zA-Z]))"
     clauses = re.split(pattern, s)
     clauses = [c.strip() for c in clauses if re.search(r"(\d|\$|¢)", c)]
@@ -133,16 +172,31 @@ def clean_rate(s):
 
     return results
  
-def flatten_rewards(list_of_lists):
+def flatten_rewards(list_of_lists: list[list]) -> list:
     """
     Flattens a list of lists into a single list.
-    e.g., [[a, b], [c, d]] -> [a, b, c, d]
+
+    Args:
+        list_of_lists (list[list]): A list of lists to flatten.
+    
+    Returns:
+        list: A flattened list.
     """
     return [item for sublist in list_of_lists for item in sublist]
 
 REWARD_CHECK_PATTERN = re.compile(r"\d+(?:\.\d+)?\s*[X%]")
 
-def clean_rewards_list(lst):
+def clean_rewards_list(lst: list[str]) -> list[tuple]:
+    """
+    Cleans a list of raw reward strings into structured reward components.
+
+    Args:
+        lst (list[str]): A list of raw reward strings.
+    
+    Returns:
+        list[tuple]: A list of tuples containing (value, rate_type, unit, category).
+    """
+    
     final_rewards = []
 
     for raw_reward_string in lst:

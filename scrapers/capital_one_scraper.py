@@ -12,7 +12,18 @@ score_conversion = {
     "Rebuilding": "Poor"
 }
 
-def scrape_capital_one(score = False, clean = False):
+def scrape_capital_one(score = False, clean = False) -> pd.DataFrame:
+    """
+    Gets credit card data from Capital One.
+
+    Args:
+        clean(bool): Whether to clean the data after scraping. Defaults to False.
+        score(bool): Whether to include credit score information. Defaults to False.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped credit card data.
+    """
+
     soup = link2soup("https://www.capitalone.com/credit-cards/compare/")
     card_container = soup.select("card-product-all-cards-list-item")
     card_container = card_container[0:-1] #have some weird formatting with an extra block

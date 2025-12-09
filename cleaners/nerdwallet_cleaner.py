@@ -22,7 +22,16 @@ REWARD_CHECK_PATTERN = re.compile(r"(\d+(?:\.\d+)?)\s*([X%]|x\s+points|x\s+miles
 FILTER_KEYWORDS = ["annual fee", "deposit", "credit line", "refundable", "minimum deposit"]
 FILTER_PATTERN = re.compile(r"|".join(FILTER_KEYWORDS))
 
-def normalize_unit(unit_str):
+def normalize_unit(unit_str: str) -> str:
+    """
+    Normalizes the unit string to a standard format.
+
+    Args:
+        unit_str (str): The unit string to normalize.
+
+    Returns:
+        str: The normalized unit string.
+    """
     if not unit_str: return "rewards"
     unit_str = unit_str.lower().strip()
     if "membership rewards" in unit_str: return "membership rewards points"
@@ -33,12 +42,31 @@ def normalize_unit(unit_str):
     if "mile" in unit_str: return "miles"
     return "rewards"
 
-def detect_category(clause_lower):
+def detect_category(clause_lower: str) -> str:
+    """
+    Detects the reward category based on keywords in the clause.
+    
+    Args:
+        clause_lower (str): The reward clause in lowercase.
+    
+    Returns:
+        str: The detected reward category.
+    """
+
     for cat, keywords in CATEGORIES.items():
         if any(k.lower() in clause_lower for k in keywords): return cat
     return "Other"
 
 def clean_rate(s: str) -> list[tuple]:
+    """
+    Cleans and parses a reward rate string into structured components.
+
+    Args:
+        s (str): The raw reward rate string.
+    
+    Returns:
+        list[tuple]: A list of tuples containing (value, rate_type, unit, category).
+    """
     results = []
     s = re.sub(r'\([^)]*\)', '', s)
     s_lower = s.lower().replace("®", "").replace("℠", "").replace("™", "")
@@ -83,6 +111,16 @@ def clean_rate(s: str) -> list[tuple]:
     return results
 
 def clean_rewards_list(raw_rewards_list: list[str]) -> list[tuple]:
+    """
+    Cleans a list of raw reward strings into structured reward components.
+
+    Args:
+        raw_rewards_list (list[str]): A list of raw reward strings.
+
+    Returns:
+        list[tuple]: A list of tuples containing (value, rate_type, unit, category).
+    """
+
     final_rewards = []
     
     for raw_reward_string in raw_rewards_list:
@@ -104,7 +142,16 @@ def clean_rewards_list(raw_rewards_list: list[str]) -> list[tuple]:
         
     return final_rewards
 
-def clean_annual_fee(s):
+def clean_annual_fee(s: str) -> int:
+    """
+    Turns an annual fee string into an integer value.
+
+    Args:
+        s (str): The raw annual fee string.
+    
+    Returns:
+        int: The cleaned annual fee as an integer.
+    """
     nums = re.findall(r"\d+", s)
     if len(nums) == 1:
         return int(nums[0])

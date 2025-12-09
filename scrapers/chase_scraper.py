@@ -6,7 +6,16 @@ from tqdm import tqdm
 from scrapers.scraper_core import link2soup
 import pandas as pd
 
-def scrape_chase():
+def scrape_chase() -> pd.DataFrame:
+    """
+    Gets credit card data from Chase.
+
+    Args:
+        None
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped credit card data.
+    """
     BASE = "https://creditcards.chase.com"
     LINK = "https://creditcards.chase.com/all-credit-cards?CELL=6TKX"
     
