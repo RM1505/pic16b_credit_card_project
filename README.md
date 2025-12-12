@@ -7,3 +7,9 @@ Credit cards are complicated. The AMEX Platinum, for example, advertises thousan
 We propose a Credit-Card Reward Optimizer to give consumers a real, measurable advantage. 
 * Phase 1 (MVP): build a web scraper and normalized database of U.S. consumer credit-card offers and reward rules, then deliver a personalized recommender that matches a user’s historical spending to the cards that maximize their net benefit. 
 * Phase 2 (stretch): create a “proxy” mechanism that routes or allocates purchases across a user’s cards to realize combined rewards (initially via actionable recommendations and virtual card tokens; later, explore automated routing where feasible).
+
+## Group Contribution Statement
+Rigel: Built custom web scrapers for major issuers, cleaners, scraped credit card tiers.
+Sasha: Parsed data from web scrapers into clean, usable dataframes.
+Ameer: Developed optimization framework to incorporate trigger-based reward bonuses.
+Angela: Found dollars per point values for major issuers, rewards handling, built front end (NiceGUI).
