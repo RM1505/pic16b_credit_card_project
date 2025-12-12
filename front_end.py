@@ -2,6 +2,28 @@ from nicegui import ui
 import json
 from solver import get_dicts, optimize_cardspace
 import pandas as pd
+import html
+
+def rewards_dict_to_html(d):
+    out = ""
+    for category, info in d.items():
+        out += f"""
+        <div class="category">
+            <h3>{html.escape(category)}</h3>
+            <table>
+        """
+        for k, v in info.items():
+            out += f"""
+                <tr>
+                    <td class="key">{html.escape(k)}</td>
+                    <td class="val">{html.escape(str(v))}</td>
+                </tr>
+            """
+        out += """
+            </table>
+        </div>
+        """
+    return out
 
 def load_cards(path: str = "cards_w_score.json"):
 	with open(path, "r", encoding="utf-8") as f:
@@ -131,6 +153,26 @@ with ui.column().classes(
 
         result_html = ui.html("", sanitize=None).classes("text-xl font-medium mt-5 text-green-600")
 
+        import html
+
+        def rewards_to_expansions(d):
+            for category, info in d.items():
+                with ui.expansion(category, icon='credit_card', value=False).classes('w-full'):
+                    ui.html("""
+                    <table class="reward-table">
+                    """, sanitize=None)
+
+                    for k, v in info.items():
+                        ui.html(f"""
+                            <tr>
+                                <td class="key">{html.escape(k)}</td>
+                                <td class="val">{html.escape(str(v))}</td>
+                            </tr>
+                        """, sanitize=None)
+
+                    ui.html("</table>", sanitize=None)
+
+
         def submit():
             try:
                 solver_inputs = {}
@@ -144,16 +186,20 @@ with ui.column().classes(
             dict_cards, fees= get_dicts(realistic_cards)
 
             chosen, total, held, breakdown = optimize_cardspace(dict_cards, fees, solver_inputs, 800)
-            #result_label.set_text(f"Your estimated annual spending: ${chosen:,.2f}")
-            output_lines = [f"Your optimal wallet is:"]
+            print(breakdown)
+            output_lines = [f"<strong>Your optimal wallet is:</strong>"]
             elements_used = []
             for key, element in chosen.items():
                 if element not in elements_used:
                     elements_used.append(element)
                     output_lines.append(f"• {element} ")
-            output_lines.append(f"Estimated Annual Rewards: ${total:,.2f}")
-            html_content = "<br>".join(output_lines)
+            output_lines.append(f"<strong>Estimated Annual Rewards:</strong> ${total:,.2f}")
+
+            html_content = "<br><br>".join(output_lines)
+
             result_html.set_content(html_content)
+
+            rewards_to_expansions(breakdown)
 
         ui.button("Calculate Annual Rewards", on_click=submit).classes("mt-4")
 
