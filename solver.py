@@ -50,6 +50,23 @@ POINTS_TO_CASH: Dict[str, Dict[str, float]]= {
 }
 
 def get_conversion_rate(issuer: str, unit: str) -> float:
+     """
+    Return the cash-equivalent conversion rate for a reward unit issued by a
+    given card issuer.
+
+    Parameters
+    ----------
+    issuer : str
+        Name of the card issuer (e.g., "Chase", "American Express").
+    unit : str
+        Reward unit type (e.g., "points", "miles").
+
+    Returns
+    -------
+    float
+        Dollar value per reward unit. Falls back to issuer-default or global
+        default if a specific mapping is unavailable.
+    """
     # pick issuer or default
     issuer_table = POINTS_TO_CASH.get(issuer, POINTS_TO_CASH["default"])
 
@@ -61,6 +78,29 @@ def get_conversion_rate(issuer: str, unit: str) -> float:
     return POINTS_TO_CASH["default"].get(unit, 0.01)
 
 def get_dicts(df):
+        """
+    Parse a cleaned rewards dataset into structured dictionaries used by the
+    optimization model.
+
+    For each card, this function extracts:
+      - per-category cash-equivalent reward rates
+      - trigger-based reward bonuses
+      - minimum credit score requirements (if provided)
+      - annual fees
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame containing cleaned card metadata and reward definitions.
+
+    Returns
+    -------
+    Tuple[dict, dict]
+        cards_dict : dict
+            Mapping card -> { "min_score", "rates", "triggers" }.
+        fees_dict : dict
+            Mapping card -> annual fee.
+    """
     cards_dict = {}
     fees_dict = {}
 
@@ -103,29 +143,113 @@ def get_dicts(df):
 
 
 def summarize(cats, chosen, spending, cards, trigger_bonus, fees, held):
+    """
+    Generate a human-readable breakdown of the optimization solution.
+
+    For each spending category, this function reports:
+      - assigned card (if any)
+      - spending amount
+      - reward rate
+      - trigger bonus
+      - total reward contribution
+
+    Annual fees are subtracted exactly once per held card, at the card's
+    first appearance in the category list, to avoid double-counting while
+    preserving an intuitive per-category presentation.
+
+    Parameters
+    ----------
+    cats : list
+        List of spending categories.
+    chosen : dict
+        Mapping category -> assigned card (or None).
+    spending : dict
+        Annual spending by category.
+    cards : dict
+        Card metadata including reward rates.
+    trigger_bonus : dict
+        Precomputed trigger bonuses keyed by (card, category).
+    fees : dict
+        Annual fees per card.
+    held : set
+        Set of cards selected by the optimization model.
+
+    Returns
+    -------
+    dict
+        Per-category breakdown of rewards and net contributions.
+    """
     breakdown = {}
+    fee_charged = set() # cards we already charged fee to
 
     for k in cats:
-        c = chosen[k]                      # card chosen for category k
-        spend = spending[k]                # dollars spent in that category
+        c = chosen.get(k)   # may be None
+        spend = spending[k]
+
+        if c is None:
+            breakdown[k] = {
+                "card": None,
+                "spend": spend,
+                "rate": 0.0,
+                "trigger_bonus": 0.0,
+                "raw_reward": 0.0,
+                "total_reward": 0.0,
+                "fee": 0.0,
+                "net_contribution": 0.0,
+                "equation": "unassigned"
+            }
+            continue
+
         rate = cards[c]["rates"].get(k, 0.0)
-        trig = trigger_bonus[(c, k)]       # from your precomputed trigger table
-        reward_val = spend * rate + trig
-        fee_val = fees[c] if c in held else 0   # fee counted once if held
+        trig = trigger_bonus[(c, k)]
+        raw = spend * rate
+        reward_val = raw + trig
+
+        fee_val = 0.0
+        if c in held and c not in fee_charged:
+            fee_val = float(fees.get(c, 0.0))
+            fee_charged.add(c)
+
         breakdown[k] = {
             "card": c,
             "spend": spend,
             "rate": rate,
             "trigger_bonus": trig,
-            "raw_reward": spend * rate,
+            "raw_reward": raw,
             "total_reward": reward_val,
             "fee": fee_val,
             "net_contribution": reward_val - fee_val,
             "equation": f"{spend} * {rate} + {trig} - {fee_val}"
         }
+
     return breakdown
 
+
 def trigger_bonuses(card_list, cards, spending, cats):
+    """
+    Precompute trigger-based reward bonuses for each (card, category) pair.
+
+    Given fixed category-level spending, this function evaluates whether
+    trigger conditions (e.g., minimum spend thresholds) are met and returns
+    the corresponding bonus amounts. These bonuses are treated as constants
+    in the optimization model to preserve linearity.
+
+    Parameters
+    ----------
+    card_list : list
+        List of candidate cards.
+    cards : dict
+        Card metadata including trigger definitions.
+    spending : dict
+        Annual spending by category.
+    cats : list
+        List of spending categories.
+
+    Returns
+    -------
+    dict
+        Mapping (card, category) -> trigger bonus value.
+    """
     bonuses={}
     for c in card_list:
         trig_dict = cards[c].get("triggers", {})  # may be missing
@@ -141,18 +265,43 @@ def trigger_bonuses(card_list, cards, spending, cats):
 
 def optimize_cardspace(cards, fees, spending, score):
     """
-    cards[card] = {"min_score": int, "rates": {category: rate}}
-    fees[card]  = annual fee
-    spending[category] = spend in that category
-    """
-    # For Trigger-Based: 
-    # Given spending amount in a category you can determine if they will hit a trigger and just add that to reward
-    # Note: its hard to account for triggers that might not stack. for ex if you spend 100 get 20 but if you spend 200 and get 40 you shouldnt apply both.
-    # Im gonna assume that if you exceed the spend for a trigger that ur gonna get that bonus
-    
-    # For point distribution: TODO
-    # Take point equivalents by category consider combinations with constraint as points earned. Create card copies
+    Solve the credit card portfolio and spending allocation problem.
 
+    This function formulates and solves a mixed-integer linear program that
+    selects an optimal subset of credit cards and assigns each spending
+    category to at most one card in order to maximize net annual rewards.
+    Rewards include base category multipliers and precomputed trigger bonuses,
+    minus annual card fees.
+
+    Constraints enforce:
+      - at most one card per spending category
+      - cards can only be used if held
+      - held cards must be used in at least one category
+      - eligibility based on minimum credit score
+
+    Parameters
+    ----------
+    cards : dict
+        Mapping card -> reward structure and eligibility data.
+    fees : dict
+        Mapping card -> annual fee.
+    spending : dict
+        Annual spending by category.
+    score : int
+        User's credit score.
+
+    Returns
+    -------
+    Tuple
+        chosen : dict
+            Mapping category -> selected card (or None).
+        total : float
+            Optimal net annual reward value.
+        held : set
+            Set of cards selected by the model.
+        breakdown : dict
+            Per-category reward breakdown for the solution.
+    """
     prob = pulp.LpProblem("Maximize_Rewards", pulp.LpMaximize)
     cats = list(spending.keys())
     card_list = list(cards.keys())
@@ -162,10 +311,10 @@ def optimize_cardspace(cards, fees, spending, score):
 
     #decision vars
 
-    #card selection indicator
+        #card selection indicator
     y = {c: pulp.LpVariable(f"hold_{c}", 0, 1, pulp.LpBinary) for c in card_list}
 
-    #category decision 
+        #category decision 
     x = {(c,k): pulp.LpVariable(f"use_{c}_{k}", 0, 1, pulp.LpBinary)
          for c in card_list for k in cats}
 
@@ -198,11 +347,16 @@ def optimize_cardspace(cards, fees, spending, score):
 
 
     prob.solve(pulp.PULP_CBC_CMD(msg=False))
-    if pulp.LpStatus[pulp.LpStatusOptimal] != 'Optimal' and pulp.LpStatus[prob.status] != 'Optimal':
-        return "No optimal solution found", 0.0, set(), {}
+    #corrected optimality check
+    if pulp.LpStatus[prob.status] != "Optimal":
+        return None, 0.0, set(), {}, {}
 
     total = pulp.value(reward - fee)
-    chosen = {k: max(card_list, key=lambda c: pulp.value(x[(c,k)])) for k in cats}
+    chosen = {} #realized if all x[(c,k)] = 0 itll just choose the first card.
+    for k in cats:
+        picked = [c for c in card_list if pulp.value(x[(c,k)]) > 0.5]
+        chosen[k] = picked[0] if picked else None
+
     held   = {c for c in card_list if pulp.value(y[c]) > 0.5}
     
     breakdown = summarize(cats, chosen, spending, cards, trigger_bonus, fees, held)
