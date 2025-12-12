@@ -180,52 +180,53 @@ class Parsing:
         """
         Parses through the annual fee and makes it so it's only one singular integer
         """
-        # Handle case where rewards might be a list
+        #If it's a list, join it
         if isinstance(text_str, list):
             text_str = " ".join(text_str)
 
-        #what characters are valid in the annual fee
-        valid_annual_fee = "0123456789-"
+        # Extract all numeric values
+        nums = re.findall(r"\d+", text_str)
+        nums = [float(n) for n in nums]
 
-        #new string and list to get the annual fee
-        clean_annual_list = []
-        clean_annual_string = ""
- 
-        index = 0
-        first_num = 0.0
-        second_num = 0.0
+        if not nums:
+            return None
 
-        #goes through the text string and appends all of the valid characters  
-        for letter in text_str:
-            if letter in valid_annual_fee:
-                clean_annual_list.append(letter)
-        
-        #if it has a start with 0 and than x.. remove the zero at the beginning and just take the second number
-        if len(clean_annual_list) > 2 and clean_annual_list[0] == "0":
-            clean_annual_list.pop(0)
+        #if its a range return the median
+        if "-" in text_str:
+            if len(nums) >= 2:
+                return statistics.median(nums[:2])
+            return nums[0]
 
-        
-        #make into a string
-        for letter in clean_annual_list:
-            clean_annual_string = clean_annual_string + letter
+        #if its not a range take the second number if a zero leads
+        if len(nums) >= 2:
+            if nums[0] == 0:
+                return nums[1] #skip leading 0
+            return nums[0]
 
-        #split it and get the median of two numbers if it's a range
-        for letter in clean_annual_string:
-            if letter == "-":
-                first, second = clean_annual_string.split("-") #split based off -
-                median = statistics.median([float(first), float(second)])
-
-                return median
-
-        #returns a singular float
-        return float(clean_annual_string)
+        #if its a single number return that number
+        return nums[0]
 
     def extract_rate_data(self, match):
         """
         Process a match into a unit
         """
-        
-        dollar1, num1, dollar2, num2, unit = match.groups()
+        # If regex failed attempt manual dollar match
+        if not match:
+            m2 = re.search(r"\$(\d[\d,]*)", str(match))
+            if m2:
+                num = m2.group(1).replace(",", "")
+                return {"rate": float(num), "unit": "$"}
+            return None
+
+        groups = match.groups()
+
+        if len(groups) != 5:
+            return None
+
+        dollar1, num1, dollar2, num2, unit = groups
+
+        if not num1:
+            return None
 
         # Remove commas
         num1 = num1.replace(",", "")
@@ -245,18 +246,33 @@ class Parsing:
             "point": "points", "points": "points",
             "mile": "miles", "miles": "miles"
         }
+
     
         unit_final = None
+        u = (unit or "").lower()
 
-        if dollar1 or dollar2:
+        #percent wins
+        if u in ["%", "percent"]:
+            unit_final = "percent"
+
+        # points/miles override dollar
+        elif u.startswith("point"):
+            unit_final = "points"
+        elif u.startswith("mile"):
+            unit_final = "miles"
+
+        # multipliers
+        elif u == "x":
+            unit_final = "multiplier"
+
+        # dollar (only if no explicit word unit was found)
+        elif dollar1 or dollar2:
             unit_final = "$"
-        elif unit:
-            unit_final = unit_map.get(unit.lower(), unit.lower()) 
-        else:
-            # Default
-            unit_final = "points" 
 
-        #return a dict with the rate and unit
+        # fallback to points
+        else:
+            unit_final = "points"
+
         return {"rate": value, "unit": unit_final}
 
     def reward_specification(self, text_str):
@@ -287,9 +303,10 @@ class Parsing:
             r"(?:earn|get|receive|reward|back|points|miles|credit)?\s*?"
             r"(\$)?(\d[\d,]*(?:\.\d+)?)"
             r"(?:\s*-\s*(\$)?(\d[\d,]*(?:\.\d+)?))?"
-            r"\s*(%|x|points?|mile|miles|points per \$|points for every \$|points per dollar|points for each dollar)?\b",
+            r"\s*(%|percent|x|points?|miles?|mile|points per \$|points for every \$|points per dollar|points for each dollar)?",
             re.IGNORECASE
         )
+
 
         #find all of the matches to the pattern in the text
         for match in pattern.finditer(text_str):
@@ -319,12 +336,20 @@ class Parsing:
 
             #use the helper function to get the rate data
             rate_data = self.extract_rate_data(match)
+
+            raw_text = text_str[match.start():match.end()].lower()
+            if "%" in raw_text or "percent" in raw_text:
+                rate_data["unit"] = "percent"
         
             #Check text right after the match to exclude time-based numbers
             post_match_index = match.end()
             post_text = text_str[post_match_index:post_match_index+20].lower()
         
             if re.match(r"\s*(day|days|month|months|year|years|quarter)\b", post_text, re.IGNORECASE):
+                continue
+
+            future_text = text_str[match.end():match.end() + 50].lower()
+            if re.search(r"(after|in)\s+\d+\s+(day|days|month|months|year|years|quarter)\b", future_text):
                 continue
             
             #add everything to the dict
@@ -420,18 +445,14 @@ pd.set_option('display.max_colwidth', None)
 
 
 df = scrape_chase()
-print(df['rewards'])
 
 parsed = Parsing(df)
 new_df = parsed.NewDataFrame()
 
-print(new_df['rewards'])
-
 new_df.to_csv('chase_dataframe.csv')
 
-df = scrape_nerdwallet()
-print(df['annual_fee'])
+df_nerd = scrape_nerdwallet()
+parsed_nerd = Parsing(df_nerd)
 
-new_df = parsed.NewDataFrame()
-
-print(new_df['annual_fee'])
+new_df = parsed_nerd.NewDataFrame()
+new_df.to_csv('nerd_dataframe.csv')
