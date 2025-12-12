@@ -1,3 +1,11 @@
+"""
+Front-end interface for the Credit Card Optimizer application.
+
+Builds an interactive NiceGUI web app that collects user spending
+habits and credit score, displays available credit cards, and visualizes the
+optimal card selection and estimated annual rewards using the solver backend.
+"""
+
 from nicegui import ui
 import json
 from solver import get_dicts, optimize_cardspace
